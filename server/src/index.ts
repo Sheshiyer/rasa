@@ -28,3 +28,24 @@ export { createSwiggyAdapter } from "./adapters/swiggy-adapter";
 
 // M2 — state store + repositories
 export * from "./store/index";
+
+// M3 — nutrition pipeline
+export type { LlmClient, CanonicalizeResult } from "./llm/client";
+export type {
+  NutritionSource,
+  Per100g,
+} from "./agents/nutrition/nutrition-source";
+export { createIndbSource } from "./agents/nutrition/indb-source";
+export {
+  defaultPortionG,
+  PORTION_G,
+  type DishType,
+} from "./agents/nutrition/portion-table";
+export {
+  parseQuantity,
+  canonicalizeDish,
+} from "./agents/nutrition/canonicalize";
+export {
+  createNutritionAgent,
+  type NutritionCacheStore,
+} from "./agents/nutrition/nutrition-agent";

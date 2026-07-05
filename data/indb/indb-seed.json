@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "note": "Curated INDB subset — per-100g macros {cal, protein_g, carb_g, fat_g}. The full 1,014-recipe Indian Nutrient Databank drops in behind the same loader (createIndbSource). Values are directional wellness estimates, not medical figures.",
+    "unit": "per_100g"
+  },
+  "grilled-chicken-bowl": { "cal": 150, "protein_g": 12, "carb_g": 11.5, "fat_g": 5.1 },
+  "paneer-butter-masala": { "cal": 260, "protein_g": 8, "carb_g": 10, "fat_g": 20 },
+  "dal-tadka": { "cal": 120, "protein_g": 6, "carb_g": 15, "fat_g": 4 },
+  "aloo-paratha": { "cal": 230, "protein_g": 5, "carb_g": 32, "fat_g": 9 },
+  "rajma-chawal": { "cal": 130, "protein_g": 5, "carb_g": 22, "fat_g": 2 },
+  "jeera-rice": { "cal": 140, "protein_g": 3, "carb_g": 28, "fat_g": 2 },
+  "chicken-biryani": { "cal": 170, "protein_g": 9, "carb_g": 20, "fat_g": 6 },
+  "roti": { "cal": 290, "protein_g": 9, "carb_g": 55, "fat_g": 4 },
+  "thai-green-curry": { "cal": 130, "protein_g": 7, "carb_g": 8, "fat_g": 8 },
+  "grilled-fish-fillet": { "cal": 160, "protein_g": 20, "carb_g": 2, "fat_g": 8 }
+}
