@@ -91,7 +91,7 @@ No external services are required to develop or test: the Swiggy MCP is mocked (
 | Package        | Path                 | What it is                                                                          | Status   |
 | -------------- | -------------------- | ----------------------------------------------------------------------------------- | -------- |
 | `@rasa/shared` | [`shared/`](shared/) | Zod schemas (6 domain entities), the `SourceAdapter` moat boundary, guardrail types | ✅       |
-| `@rasa/server` | [`server/`](server/) | Swiggy MCP client + adapter, RLS state store, the nutrition pipeline, agents        | 🚧 M0–M3 |
+| `@rasa/server` | [`server/`](server/) | Swiggy MCP client + adapter, RLS state store, the nutrition pipeline, agents        | 🚧 M0–M4 |
 | `@rasa/app`    | `app/`               | Expo (React Native) client — onboarding, plan review, one-tap confirm               | ⬜ M9    |
 
 <!-- readme-gen:end:packages -->
