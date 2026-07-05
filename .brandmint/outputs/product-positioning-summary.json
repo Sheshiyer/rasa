@@ -1,0 +1,43 @@
+{
+  "cbbe": {
+    "salience": {
+      "category": "AI meal planner + auto-ordering for delivery",
+      "core_problem": "Daily food decisions, diet drift, and unaccountable delivery spend",
+      "simple_description": "Rasa plans your month of meals to your macros and budget, and orders them a tap at a time."
+    },
+    "performance": {
+      "points_of_parity": [
+        "Orders real food from real restaurants via Swiggy",
+        "Dietary and allergen filtering",
+        "Coupons and offers applied at checkout"
+      ],
+      "points_of_difference": [
+        "Plans a full 30 days ahead, not one order at a time",
+        "Hits estimated calorie and macro targets across the day",
+        "Enforces a hard monthly budget cap with per-meal envelopes",
+        "Cross-platform by design (Swiggy now; Zomato, Instamart, tiffin next)"
+      ],
+      "value_logic": "Convenience gets you in the door; macro adherence and a spend cap are what make Rasa worth paying for."
+    },
+    "imagery": {
+      "associated_brands": ["Swiggy", "HealthifyMe", "Notion", "Cred"],
+      "usage_scenes": ["A noon confirm tap between meetings", "A Sunday plan-approval review", "An end-of-month 'stayed under budget' receipt"],
+      "mode_of_use": "Set preferences once; approve the plan; tap to confirm each meal; otherwise forget it."
+    },
+    "judgments": {
+      "positive_beliefs": ["It respects my time", "It keeps me honest", "It won't overspend"],
+      "objections": ["I don't trust silent auto-spend", "Restaurant macros can't be exact", "It'll get repetitive"],
+      "credibility_proof": "One-tap gates, allergen hard-blocks, a visible spend ledger, and honest 'estimated' macro labels."
+    },
+    "feelings": {
+      "target_emotions": ["relief", "in control", "cared for"],
+      "voice": "A calm, competent friend who has your meals handled",
+      "tone": "Warm and pragmatic — never preachy, never a diet scold"
+    },
+    "resonance": {
+      "loyalty_logic": "The preference-and-macro graph gets smarter every meal, so leaving means starting over.",
+      "mission": "Give people back the daily hour and headspace that food decisions quietly steal.",
+      "community_connection": "For people who order in daily and want it to finally be smart, balanced, and within budget."
+    }
+  }
+}

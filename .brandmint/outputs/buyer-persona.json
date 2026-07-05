@@ -1,0 +1,38 @@
+{
+  "meta_project": {
+    "product_name": "Rasa",
+    "persona_name": "Deadline Deepak, the time-starved tech professional",
+    "tone_source": "Derived from JTBD interviews of metro IT/tech professionals who order delivery 12-25x/month and already pay for both Swiggy One and a health app; voice is pragmatic, wry, and time-protective."
+  },
+  "voice_samples": {
+    "professional": "I don't want another app to manage — I want one less decision in my day and a bill I can actually predict.",
+    "authoritative": "I already order in every day. Don't teach me to cook; just make the ordering smart and stop it bleeding money.",
+    "confident": "If it hits my protein and stays under my cap, I'll tap confirm at noon and never think about lunch again."
+  },
+  "emotional_drivers": {
+    "primary": "Relief — reclaiming the daily decision energy that sprints and calls already drain.",
+    "secondary": "Control — a food spend and a diet that finally stay inside the lines he set.",
+    "tertiary": "Self-respect — eating like an adult who has his life handled, without the effort."
+  },
+  "demographics": {
+    "job_titles": ["Software engineer", "Product manager", "Engineering lead", "Data scientist", "Founder / early-stage operator"],
+    "company_size": "Startups to large tech firms",
+    "company_type": "Metro tech hubs — Bengaluru, Hyderabad, Pune, Gurgaon, Chennai; 26-35; lives alone or with flatmates; no cook"
+  },
+  "pain_points": [
+    "Loses 15 minutes and his 4pm decision energy to 'what do I eat' every single day.",
+    "Defaults to the same three unhealthy restaurants and impulse-orders at peak hunger and peak price.",
+    "Monthly delivery bill balloons to ₹8k-15k he cannot account for.",
+    "Diet collapses midweek because no delivery flow shows a dish's macros."
+  ],
+  "goals": [
+    "Never think about routine meals again, without spending more.",
+    "Hit protein and calorie targets on autopilot.",
+    "Keep monthly food spend under a hard, self-set cap."
+  ],
+  "objections": [
+    "I don't want a system spending my money without me looking.",
+    "Auto-plans will feel repetitive and robotic by week three.",
+    "Can the macro numbers on restaurant food actually be trusted?"
+  ]
+}

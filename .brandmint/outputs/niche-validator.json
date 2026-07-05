@@ -1,0 +1,58 @@
+{
+  "complaint_clusters": [
+    {
+      "theme": "Daily food decision fatigue",
+      "complaints": [
+        "I waste 15 minutes every afternoon scrolling Swiggy before defaulting to the same three places.",
+        "By 4pm I have no energy left to decide what to eat, so I just impulse-order whatever is fastest.",
+        "I already order in every day — I just don't want to keep choosing."
+      ],
+      "pain_points": [
+        "Repeated daily decision cost",
+        "Peak-hunger impulse ordering",
+        "Choice overload and menu fatigue"
+      ]
+    },
+    {
+      "theme": "Diet adherence collapse",
+      "complaints": [
+        "My meal prep is gone by Wednesday and I fall back onto off-plan delivery.",
+        "No delivery app tells me the protein or calories of a specific restaurant dish.",
+        "I track my macros religiously but still fail because I can't order food that fits them."
+      ],
+      "pain_points": [
+        "No macro visibility on restaurant menus",
+        "Gap between tracking and procuring food",
+        "Midweek plan collapse"
+      ]
+    },
+    {
+      "theme": "Unaccountable delivery spend",
+      "complaints": [
+        "My monthly Swiggy bill is ₹10-15k and I genuinely can't account for it.",
+        "Prices spike exactly when I'm hungriest, so I pay the most for the worst choices.",
+        "I want to eat out daily but not blow past a budget I set for myself."
+      ],
+      "pain_points": [
+        "Budget overshoot",
+        "Peak-pricing exposure",
+        "No spend cap on recurring ordering"
+      ]
+    }
+  ],
+  "viability_scores": {
+    "niche_size": 7,
+    "competition": 5,
+    "growth_potential": 9,
+    "revenue_potential": 7,
+    "overall_score": 28
+  },
+  "verdict": "Go",
+  "recommendations": [
+    "Lead with health/adherence value (proven ₹1,000-1,700/mo WTP), use convenience as the acquisition hook, keep budget as a guardrail feature.",
+    "Ship one-tap-approve per order, not silent autonomy — money plus allergens make full auto-ordering too risky at launch.",
+    "Never charge a convenience surcharge; monetize a health-framed subscription plus affiliate economics.",
+    "Reserve the cross-platform orchestration seam (Swiggy + Zomato + Instamart + tiffin) as the defensible moat; v1 is Swiggy-only behind a swappable adapter.",
+    "Deliver macros via a hybrid pipeline (LLM canonicalize plus an India-native food database) and frame every figure as an estimate."
+  ]
+}

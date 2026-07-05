@@ -1,0 +1,69 @@
+{
+  "handoff": {
+    "pitch": {
+      "product_pitch": "Rasa plans a month of meals around your macros and your budget, then orders them for you a tap at a time.",
+      "features_benefits": [
+        { "feature": "30-day plan", "benefit": "Your whole month of routine meals decided once, so you stop choosing daily." },
+        { "feature": "Macro-aware ordering", "benefit": "Food that fits your protein and calorie targets, estimated for you." },
+        { "feature": "Hard budget cap", "benefit": "Eat out daily and still never blow past the number you set." },
+        { "feature": "One-tap confirm", "benefit": "A 5-second yes before each order — smart, but never behind your back." }
+      ],
+      "use_cases": [
+        { "scene": "Noon between two meetings", "context": "Tap confirm on a macro-fit lunch under your cap." },
+        { "scene": "Sunday evening", "context": "Approve next week's plan in one review." }
+      ]
+    },
+    "audiences": {
+      "target_audiences": [
+        { "demographics": "Metro IT/tech professionals, 26-35, order delivery 12-25x/month", "interests": "Productivity, fitness, saving time, predictable spend" },
+        { "demographics": "Fitness / macro-tracking users, 24-34", "interests": "Protein targets, diet adherence, meal prep alternatives" }
+      ]
+    },
+    "value_props": {
+      "functional": [
+        { "reason": "Removes the daily what-to-eat decision for routine meals." },
+        { "reason": "Keeps calories and macros on target without cooking or tracking." },
+        { "reason": "Caps monthly food spend and optimizes with coupons." }
+      ],
+      "emotional": [
+        { "reason": "Relief from decision fatigue and diet guilt." },
+        { "reason": "The calm of knowing meals and money are handled." }
+      ],
+      "self_expressive": [
+        { "reason": "I'm someone whose health and habits are quietly under control." }
+      ]
+    },
+    "objections": {
+      "potential_objections": [
+        { "concern": "Silent auto-spend", "rebuttal": "Rasa never orders behind your back — every order needs a one-tap confirm, and allergens are hard-blocked before anything reaches your cart." },
+        { "concern": "Macro accuracy", "rebuttal": "Macros are honest estimates grounded in an India-native food database, aggregated across the day to about +/-10-15% — labeled as estimates, never medical claims." },
+        { "concern": "Repetitive plans", "rebuttal": "The planner enforces variety and learns your ratings, and you can swap any meal in a tap." }
+      ]
+    },
+    "brand_pitch": {
+      "mission": "Give people back the daily hour and headspace that food decisions quietly steal — with meals that stay balanced and within budget.",
+      "ethos": "Effortless, not passive. Rasa does the planning and the legwork, but you always hold the tap. Health is framed as everyday balance, never as a diet scold or a medical promise."
+    },
+    "competitive_notes": {
+      "similarities": [
+        { "competitor": "Swiggy Dietary Planner", "similarity": "Filters menus by macros and allergens" },
+        { "competitor": "HealthifyMe", "similarity": "Optimizes for nutrition goals" }
+      ],
+      "differences": [
+        { "competitor": "Swiggy Dietary Planner", "difference": "Rasa plans a month ahead, caps budget, and is built to span platforms Swiggy never will." },
+        { "competitor": "HealthifyMe", "difference": "Rasa actually procures the food, closing the gap between tracking a diet and eating it." }
+      ]
+    },
+    "usp": {
+      "unique_claim": "The only planner that decides your month of meals to your macros and budget and orders them for you, one tap at a time — across every food source.",
+      "supporting_proof": "A multi-agent engine on the Swiggy MCP: preferences, discovery, nutrition, budget, planner, scheduler and feedback agents, gated by one-tap confirms and allergen hard-blocks."
+    },
+    "emotions": {
+      "desired_emotional_response": [
+        { "emotion": "relief", "reason": "The daily decision and the runaway bill are finally off the plate." },
+        { "emotion": "trust", "reason": "Nothing is ordered or spent without an explicit tap." },
+        { "emotion": "care", "reason": "Someone competent is looking after how I eat." }
+      ]
+    }
+  }
+}

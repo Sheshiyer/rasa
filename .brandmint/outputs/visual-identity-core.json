@@ -1,0 +1,38 @@
+{
+  "visual_strategy": "Warm, appetizing and calm — the visual language of a balanced meal, not a diet app. Spice-warm hues grounded by fresh green and generous cream, so it feels nourishing and effortless rather than clinical.",
+  "color_psychology": {
+    "primary": {
+      "color": "Turmeric Saffron (#E8A33D)",
+      "psychology": "Warmth, appetite and the golden spice heart of Indian food; signals nourishment and energy without shouting, and carries the 'rasa' of taste."
+    },
+    "secondary": {
+      "color": "Fresh Basil Green (#2F7D5B)",
+      "psychology": "Balance, health and freshness; grounds the warm primary so the brand reads nourishing and honest rather than indulgent."
+    },
+    "accent": {
+      "color": "Ripe Tomato (#E4572E)",
+      "psychology": "Appetite and a decisive, tap-worthy call to action; used sparingly for confirm moments and highlights."
+    }
+  },
+  "typography": {
+    "header": "A warm humanist sans (e.g., General Sans / Satoshi) at medium weight — confident and modern, never corporate-cold.",
+    "body": "A highly legible neutral sans (e.g., Inter) for menus, macros and numbers at small sizes on mobile.",
+    "data": "A tabular-figure sans or mono for calories, macros, prices and the spend ledger, so numbers align and read at a glance."
+  },
+  "logo_guidelines": {
+    "placement": "Top-left in app and marketing; centered on splash and the plan-approval hero.",
+    "clear_space": "Minimum clear space equal to the height of the 'R' on all sides.",
+    "variations": ["Full wordmark 'Rasa'", "'R' bowl monogram", "Monochrome cream-on-green"],
+    "constraints": "Never stretch, never add a drop shadow, never place the warm mark on a busy food photo without a scrim."
+  },
+  "imagery_art_direction": {
+    "photography": "Real, warm, top-down and close-up food on cream or wood; natural light, honest portions, no glossy fast-food gloss or artificial garnish.",
+    "illustration": "Simple line-and-fill food and bowl motifs in the palette; friendly, geometric, never cartoonish.",
+    "environments": "Everyday Indian home and desk contexts — a meal arriving between meetings — not aspirational studio kitchens."
+  },
+  "graphic_elements": {
+    "shapes": "Soft rounded rectangles and full circles echoing plates, bowls and the 'tap' target; generous corner radii.",
+    "textures": "Matte, flat surfaces with warm cream backgrounds; subtle paper-grain at most, no gradients or gloss.",
+    "patterns": "A light repeating motif of bowls / spice dots used as a quiet background texture, never over content."
+  }
+}

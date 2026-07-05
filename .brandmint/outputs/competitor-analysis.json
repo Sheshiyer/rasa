@@ -1,0 +1,42 @@
+{
+  "market_gaps": [
+    "No product plans a full month of meals ahead AND one-tap-orders it AND hits macros AND caps budget AND spans multiple platforms — nobody marks yes on more than two of these five.",
+    "Restaurant delivery has no verified nutrition layer; macro-accurate ordering is unmet.",
+    "No neutral orchestrator spends a single monthly budget across Swiggy, Zomato, Instamart and tiffin.",
+    "Budget-capped recurring ordering for premium delivery (not tiffin) is unserved."
+  ],
+  "technical_benchmark": {
+    "dimensions": {
+      "planning_horizon": "30-day plan vs competitors' single-order or weekly pack",
+      "nutrition_accuracy": "Daily-plan macros within +/-10-15% via hybrid LLM + India-native DB",
+      "budget_control": "Hard monthly cap + per-slot envelope + coupon optimization",
+      "autonomy_model": "One-tap approve per order; app-side scheduler (MCP has no scheduling)",
+      "platform_coverage": "Swiggy v1; Zomato + Instamart + tiffin behind one SourceAdapter (v2)"
+    },
+    "materials": [
+      "Swiggy Food MCP (14 tools incl. place_food_order, OAuth 2.1 + PKCE)",
+      "India-native nutrition DB (INDB free base, Bon Happetee production) + portion-heuristic table",
+      "Portable preference graph + spend ledger as the state store"
+    ]
+  },
+  "verified_anxieties": [
+    "Will it order the wrong thing, or something with an allergen, while I'm not looking?",
+    "Will an app 'auto-spending' my money quietly overshoot my budget?",
+    "Are the macro numbers on restaurant dishes actually trustworthy?"
+  ],
+  "competitive_landscape": {
+    "direct_competitors": [
+      { "name": "Swiggy native (MCP 'Dietary Planner')", "weakness": "Single-platform, no month plan, no budget cap, unverified macros" },
+      { "name": "Zomato native (MCP + memory)", "weakness": "Single-platform, order-by-order, no plan or budget logic" },
+      { "name": "HealthifyMe", "weakness": "Tracks and coaches but never procures the food — execution gap" },
+      { "name": "EatSure / cloud-kitchen subs", "weakness": "Own-brand only, no macros, not cross-platform" },
+      { "name": "Tiffin subscription apps", "weakness": "Single kitchen, fixed menu, no macro or budget intelligence" }
+    ],
+    "differentiation": [
+      "The only neutral, cross-platform planner that spends one budget across every food source (the seam platforms structurally cannot build).",
+      "A portable preference-and-macro graph that gets smarter with every meal — switching cost the platforms' per-app memory can't match.",
+      "Month-ahead planning with a hard budget cap and estimated macros, ordered one tap at a time.",
+      "Positioned as a partnership / acquisition target, not a head-on fight with Swiggy."
+    ]
+  }
+}

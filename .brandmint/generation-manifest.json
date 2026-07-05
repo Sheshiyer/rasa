@@ -1,0 +1,27 @@
+{
+  "brand": "Rasa",
+  "slug": "rasa",
+  "repo_slug": "monthlymealprep",
+  "pipeline": "brandmint v2 (strategic brand-DNA core; waves 1-3 equivalent)",
+  "generated_on": "2026-07-05",
+  "method": "Authored to the brandmint v2 output contract (mirrors iverif/.brandmint/outputs schemas), seeded by the 4-stream genesis research and the approved design spec.",
+  "outputs": [
+    { "skill": "niche-validator", "wave": 1, "source": "genesis niche-validation research + spec" },
+    { "skill": "competitor-analysis", "wave": 1, "source": "genesis competitor/defensibility research" },
+    { "skill": "buyer-persona", "wave": 1, "source": "genesis persona/JTBD research (beachhead: Deadline Deepak)" },
+    { "skill": "product-positioning-summary", "wave": 2, "source": "CBBE derived from spec thesis" },
+    { "skill": "mds-messaging-direction-summary", "wave": 2, "source": "spec thesis + research" },
+    { "skill": "voice-and-tone", "wave": 2, "source": "brand personality (Caregiver/Sage)" },
+    { "skill": "visual-identity-core", "wave": 3, "source": "brand strategy + 'rasa' concept" }
+  ],
+  "deferred_waves": {
+    "4_photography": "Lifestyle / product / hero shots — needs image-gen infra",
+    "5_illustration": "Brand illustrations / icons / patterns — needs image-gen infra",
+    "6_content": "Landing page / email sequences / ads / press release",
+    "7_synthesis": "NotebookLM brand docs / wiki"
+  },
+  "next_steps": [
+    "Optional: run bm launch --config .brandmint/brand-config.yaml --waves 4-7 for visual assets + content (needs image-gen keys).",
+    "Map this core into the Cambium Genesis contract (brand_system / copy_system / visual_system) and emit the product-branch proof packet."
+  ]
+}

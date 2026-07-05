@@ -1,6 +1,8 @@
-# monthlymealprep
+# monthlymealprep → **Rasa**
 
-*A month of meals, planned to your macros and budget, ordered with one tap.*
+*Taste, balanced. — A month of meals, planned to your macros and budget, ordered with one tap.*
+
+**Brand:** Rasa (minted via brandmint v2 — see [`.brandmint/BRAND-BRIEF.md`](.brandmint/BRAND-BRIEF.md)). `monthlymealprep` is the repo slug.
 
 A thoughtseed product branch. A user answers a few preference questions — via a copy-paste ChatGPT/Claude prompt or in-app — and a multi-agent system builds a **30-day meal-ordering plan** and orders it through the **Swiggy MCP** (Zomato/Instamart/tiffin in later versions), one tap at a time.
 

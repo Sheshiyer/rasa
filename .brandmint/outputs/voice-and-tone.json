@@ -1,0 +1,24 @@
+{
+  "voice": {
+    "tones": ["calm", "warm", "pragmatic", "precise", "unobtrusive", "quietly witty"],
+    "persona": {
+      "name": "The competent friend who cooks",
+      "description": "Rasa speaks like a sharp, caring friend who has their own life handled and offers to handle this bit of yours — never preachy, never a diet coach yelling macros.",
+      "peer_identity": "The friend who texts 'sorted your lunch, tap to confirm' — not the app that guilt-trips you about calories."
+    },
+    "culture": {
+      "references": ["Indian everyday food culture", "the daily order-in ritual", "quiet productivity", "Ayurvedic idea of balanced rasas"],
+      "values": ["balance", "effortlessness", "honesty", "respect for time", "control"]
+    },
+    "lingo": {
+      "terminology": ["your month, planned", "tap to confirm", "stayed under cap", "macro-fit", "the plan", "swap it"],
+      "acronyms": []
+    },
+    "emotions": ["relief", "trust", "care", "calm control"],
+    "empathy_statements": [
+      "You already order in every day — Rasa just makes it smart, balanced, and within budget.",
+      "No 4pm 'what do I eat.' It's already sorted; you just tap yes.",
+      "Eat out daily and still end the month under the number you set."
+    ]
+  }
+}

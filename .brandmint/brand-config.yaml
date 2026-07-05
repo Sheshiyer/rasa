@@ -1,0 +1,89 @@
+# Brandmint v2 — Rasa brand configuration
+# Product (repo slug: monthlymealprep): an app + agent ecosystem that plans a 30-day
+# meal schedule to a user's macros and budget and one-tap-orders it via the Swiggy MCP
+# (Zomato / Instamart / tiffin in later versions). Health-adherence value, convenience
+# hook, budget guardrail; defensible core (v2) = neutral cross-platform orchestration.
+
+brand:
+  name: "Rasa"
+  slug: "rasa"
+  repo_slug: "monthlymealprep"
+  tagline: "Taste, balanced."
+  category: "consumer" # health-tech / food-tech consumer app
+  market:
+    b2b: false
+    b2c: true
+    enterprise: false
+    smb: false
+
+company:
+  description: |
+    Rasa plans a month of meals around your macros and your budget, then orders them for
+    you a tap at a time. You answer a few questions once — diet, goals, spend, what you
+    can't stand — and Rasa builds a 30-day plan and quietly gets each meal to your door
+    through Swiggy, always inside your calorie target and your monthly cap. No daily
+    scrolling, no 4pm "what do I eat," no blown budget, no falling off your diet.
+  founding_year: 2026
+  stage: "concept"
+  problem: |
+    Busy urban Indians who already order in every day lose 15 minutes and their decision
+    energy to "what do I eat," default to the same unhealthy few restaurants, impulse-order
+    at peak hunger, and watch a delivery bill they can't account for. Diets collapse by
+    Wednesday because no delivery flow tells them the macros of a restaurant dish. Swiggy
+    sells convenience; nobody plans the month, hits the macros, and caps the spend at once.
+  solution: |
+    Rasa is a multi-agent planner on top of the Swiggy MCP. A preferences agent captures a
+    portable taste-and-goals profile; a discovery agent pulls real menus; a nutrition agent
+    estimates calories and macros; a budget agent caps and optimizes spend; a planner
+    composes a 30-day schedule; a scheduler places each order after a 5-second one-tap
+    confirm. The month is planned once, the macros and budget hold, the ordering just
+    happens — and, later, across every food source, not only Swiggy.
+
+audience:
+  primary:
+    title: "Metro IT / tech professional (\"Deadline Deepak\")"
+    company_size: "26-35, Bengaluru / Hyderabad / Pune / Gurgaon; lives alone, no cook"
+    industry: "Software / tech; ₹12-35 LPA; already orders 12-25x/mo, pays Swiggy One + a health app"
+    pain_points:
+      - "Decision fatigue — 15 minutes and 4pm energy lost to 'what do I eat'"
+      - "Delivery bill quietly balloons to ₹8k-15k with nothing to show for it"
+      - "Diet collapses midweek; no delivery flow shows a dish's macros"
+    goals:
+      - "Never think about lunch again, without spending more"
+      - "Actually hit protein / calorie targets on autopilot"
+      - "Keep monthly food spend under a hard cap"
+  secondary:
+    title: "Fitness / macro-tracking user (\"Macro Meera\")"
+    company_size: "24-34, tracks protein/calories, follows a coach or app"
+    pain_points:
+      - "Meal-prep collapses by Wednesday into off-plan delivery"
+      - "Macro apps track what she eats but don't procure it — the execution gap"
+
+competitors:
+  direct:
+    - name: "Swiggy native (app + MCP 'Dietary Planner')"
+      positioning: "Convenience + a macro/allergen menu-filter sample app"
+      weakness: "Single-platform, no month-ahead plan, no budget cap, no verified macros"
+    - name: "HealthifyMe"
+      positioning: "AI nutrition tracking + coaching (₹999-1,699/mo)"
+      weakness: "Tracks and suggests but does not order; execution gap left to the user"
+  indirect:
+    - name: "EatSure / cloud-kitchen subscriptions"
+      positioning: "Weekly meal packs from own brands"
+      weakness: "Own-brand only, no macros, not cross-platform, not user-goal driven"
+    - name: "Tiffin subscriptions"
+      positioning: "Monthly recurring home-style meals"
+      weakness: "Single kitchen, no choice, no macros, no budget/goal intelligence"
+
+personality:
+  traits: ["effortless", "balanced", "warm", "precise", "unobtrusive"]
+  voice:
+    formality: 0.4
+    enthusiasm: 0.5
+    technicality: 0.35
+    warmth: 0.7
+  archetypes: ["Caregiver", "Sage"]
+
+constraints:
+  brand: "Health/wellness framing, never convenience-fee framing. Nutrition figures are wellness estimates, no medical/disease claims (FSSAI)."
+  autonomy: "One-tap approve per order in v1. No silent ordering."
