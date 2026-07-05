@@ -25,3 +25,6 @@ export {
   type TokenProvider,
 } from "./mcp/oauth-pkce";
 export { createSwiggyAdapter } from "./adapters/swiggy-adapter";
+
+// M2 — state store + repositories
+export * from "./store/index";
