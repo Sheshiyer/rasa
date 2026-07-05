@@ -57,3 +57,11 @@ export {
   type ProcessResult,
   type MissingQuestion,
 } from "./agents/preferences";
+
+// M5 — Discovery + Budget agents
+export { createDiscoveryAgent } from "./agents/discovery";
+export {
+  createBudgetAgent,
+  type BudgetEnvelope,
+  type CouponPlan,
+} from "./agents/budget";

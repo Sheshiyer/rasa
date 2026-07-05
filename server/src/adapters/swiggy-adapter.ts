@@ -92,5 +92,17 @@ export function createSwiggyAdapter(tools: SwiggyTools): SourceAdapter {
       }
       return out;
     },
+
+    async fetchCoupons(restaurantId) {
+      const { coupons } = await tools.fetchFoodCoupons({
+        restaurant_id: restaurantId,
+      });
+      return coupons.map((c) => ({
+        code: c.code,
+        title: c.title,
+        discount_inr: c.discount_inr,
+        min_order_inr: c.min_order_inr ?? 0,
+      }));
+    },
   };
 }

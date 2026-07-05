@@ -9,8 +9,8 @@
 <!-- readme-gen:start:badges -->
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-M0–M4%20complete-2F7D5B?style=flat-square)
-![Tests](https://img.shields.io/badge/tests-106%20passing-3fb950?style=flat-square&logo=vitest&logoColor=white)
+![Status](https://img.shields.io/badge/status-M0–M5%20complete-2F7D5B?style=flat-square)
+![Tests](https://img.shields.io/badge/tests-114%20passing-3fb950?style=flat-square&logo=vitest&logoColor=white)
 ![Type Safety](https://img.shields.io/badge/typescript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/license-Proprietary-lightgrey?style=flat-square)
 
@@ -77,7 +77,7 @@ The defensible core (reserved for v2 behind a `SourceAdapter`): **neutral cross-
 git clone https://github.com/Sheshiyer/rasa.git
 cd rasa
 pnpm install
-pnpm test        # vitest — 106 tests (schemas, MCP tools, RLS store, nutrition, prefs)
+pnpm test        # vitest — 114 tests (schemas, MCP, RLS store, nutrition, prefs, discovery, budget)
 pnpm typecheck   # tsc across workspaces
 pnpm lint        # prettier --check
 ```
@@ -91,7 +91,7 @@ No external services are required to develop or test: the Swiggy MCP is mocked (
 | Package        | Path                 | What it is                                                                          | Status   |
 | -------------- | -------------------- | ----------------------------------------------------------------------------------- | -------- |
 | `@rasa/shared` | [`shared/`](shared/) | Zod schemas (6 domain entities), the `SourceAdapter` moat boundary, guardrail types | ✅       |
-| `@rasa/server` | [`server/`](server/) | Swiggy MCP client + adapter, RLS state store, the nutrition pipeline, agents        | 🚧 M0–M4 |
+| `@rasa/server` | [`server/`](server/) | Swiggy MCP client + adapter, RLS state store, the nutrition pipeline, agents        | 🚧 M0–M5 |
 | `@rasa/app`    | `app/`               | Expo (React Native) client — onboarding, plan review, one-tap confirm               | ⬜ M9    |
 
 <!-- readme-gen:end:packages -->
@@ -147,13 +147,14 @@ graph TD
 
 ## 🧭 Milestones
 
-| ✅ Done                                             | ⬜ Upcoming                                |
-| --------------------------------------------------- | ------------------------------------------ |
-| **M0** — monorepo scaffold + `@rasa/shared` schemas | **M5** — Discovery + Budget agents         |
-| **M1** — `SourceAdapter` + Swiggy MCP client + mock | **M6** — Guardrail + Planner (CSP)         |
-| **M2** — state store + repositories + RLS           | **M7** — Scheduler / Executor              |
-| **M3** — nutrition pipeline                         | **M8** — Tracking / Feedback               |
-| **M4** — Preferences Agent + onboarding prompt      | **M9–M10** — Expo app · dry-run acceptance |
+| ✅ Done                                             | ⬜ Upcoming                        |
+| --------------------------------------------------- | ---------------------------------- |
+| **M0** — monorepo scaffold + `@rasa/shared` schemas | **M6** — Guardrail + Planner (CSP) |
+| **M1** — `SourceAdapter` + Swiggy MCP client + mock | **M7** — Scheduler / Executor      |
+| **M2** — state store + repositories + RLS           | **M8** — Tracking / Feedback       |
+| **M3** — nutrition pipeline                         | **M9** — Expo app                  |
+| **M4** — Preferences Agent + onboarding prompt      | **M10** — dry-run acceptance       |
+| **M5** — Discovery + Budget agents                  | —                                  |
 
 - **Design spec:** [`docs/superpowers/specs/2026-07-05-monthlymealprep-design.md`](docs/superpowers/specs/2026-07-05-monthlymealprep-design.md)
 - **Implementation plan (10 milestones):** [`docs/superpowers/plans/2026-07-05-monthlymealprep-v1-implementation-plan.md`](docs/superpowers/plans/2026-07-05-monthlymealprep-v1-implementation-plan.md)
@@ -166,7 +167,7 @@ graph TD
 
 | Category                 | Status               | Score |
 | :----------------------- | :------------------- | ----: |
-| Tests (106, Vitest)      | ████████████████████ |  100% |
+| Tests (114, Vitest)      | ████████████████████ |  100% |
 | Type safety (TS strict)  | ████████████████████ |  100% |
 | Lint / format (Prettier) | ████████████████████ |  100% |
 | Documentation            | ██████████████████░░ |   90% |

@@ -27,6 +27,13 @@ export interface DiscoverInput {
   limit?: number;
 }
 
+export interface CouponOffer {
+  code: string;
+  title?: string;
+  discount_inr: number;
+  min_order_inr: number;
+}
+
 export interface SourceAdapter {
   /** Stable source id, e.g. "swiggy". Matches CandidateDish.source. */
   readonly source: string;
@@ -38,4 +45,6 @@ export interface SourceAdapter {
    * Macros are NOT populated here — that is the Nutrition Agent's job.
    */
   discover(input: DiscoverInput): Promise<CandidateDish[]>;
+  /** Available coupons at a restaurant (the Budget Agent picks the best applicable one). */
+  fetchCoupons(restaurantId: string): Promise<CouponOffer[]>;
 }
