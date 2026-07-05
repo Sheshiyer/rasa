@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>monthlymealprep — runtime agent pipeline</title>
+<style>
+  :root{
+    --surface-1:#ffffff; --border:#e6e5e1; --text-primary:#1a1a19; --text-secondary:#6b6b64;
+    --bg-accent:#eef3fb; --border-accent:#c5d6ef; --bg-warning:#fbf3e0; --border-warning:#e7d7ab;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --surface-1:#26251f; --border:#3a3933; --text-primary:#f3f2ec; --text-secondary:#a8a79e;
+      --bg-accent:#1e2a3f; --border-accent:#33507e; --bg-warning:#3a3120; --border-warning:#6b5a2f;
+    }
+    body{background:#191813;}
+  }
+  body{margin:0;padding:24px;font-family:system-ui,-apple-system,sans-serif;color:var(--text-primary);}
+  main{max-width:680px;margin:0 auto;}
+  h1{font-size:18px;font-weight:500;margin:0 0 4px;}
+  p{font-size:13px;color:var(--text-secondary);margin:0 0 16px;line-height:1.6;}
+  .t{font-size:14px;font-weight:500;fill:var(--text-primary);}
+  .ts{font-size:12px;font-weight:400;fill:var(--text-secondary);}
+</style>
+</head>
+<body>
+<main>
+<h1>monthlymealprep — runtime multi-agent pipeline (v1, Swiggy-only)</h1>
+<p>Seven agents + a human-gated, guardrailed order path. Discovery and executor call the Swiggy MCP (right); the shared state store brackets the left; tracking loops learned preferences back to the profile.</p>
+<svg width="100%" viewBox="0 0 680 712" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>monthlymealprep runtime multi-agent pipeline</title>
+<desc>An onboarding prompt feeds the preferences agent, then discovery, nutrition, budget, planner, a one-time plan-approval gate, the scheduler-executor with a one-tap confirm gate, and tracking-feedback that loops back to preferences. Discovery and executor call the Swiggy MCP on the right; a shared state store brackets the left.</desc>
+<defs>
+<marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-secondary)"/></marker>
+</defs>
+
+<rect x="185" y="36" width="14" height="14" rx="3" fill="var(--bg-accent)" stroke="var(--border-accent)"/>
+<text class="ts" x="205" y="47">external</text>
+<rect x="300" y="36" width="14" height="14" rx="3" fill="var(--bg-warning)" stroke="var(--border-warning)"/>
+<text class="ts" x="320" y="47">human gate</text>
+<rect x="430" y="36" width="14" height="14" rx="3" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="ts" x="450" y="47">agent</text>
+
+<rect x="185" y="74" width="330" height="44" rx="8" fill="var(--bg-accent)" stroke="var(--border-accent)"/>
+<text class="t" x="350" y="93" text-anchor="middle">onboarding · copy-paste prompt</text>
+<text class="ts" x="350" y="109" text-anchor="middle">answers → JSON profile</text>
+
+<rect x="185" y="136" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="155" text-anchor="middle">1 · preferences agent</text>
+<text class="ts" x="350" y="171" text-anchor="middle">→ preference profile</text>
+
+<rect x="185" y="198" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="217" text-anchor="middle">2 · discovery / supply agent</text>
+<text class="ts" x="350" y="233" text-anchor="middle">SourceAdapter (Swiggy v1)</text>
+
+<rect x="185" y="260" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="279" text-anchor="middle">3 · nutrition agent</text>
+<text class="ts" x="350" y="295" text-anchor="middle">enrich macros ±10–15% / day</text>
+
+<rect x="185" y="322" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="341" text-anchor="middle">4 · budget / price agent</text>
+<text class="ts" x="350" y="357" text-anchor="middle">caps + coupons</text>
+
+<rect x="185" y="384" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="403" text-anchor="middle">5 · planner / orchestrator</text>
+<text class="ts" x="350" y="419" text-anchor="middle">prefs × nutrition × budget</text>
+
+<rect x="185" y="446" width="330" height="44" rx="8" fill="var(--bg-warning)" stroke="var(--border-warning)"/>
+<text class="t" x="350" y="465" text-anchor="middle">approve plan once</text>
+<text class="ts" x="350" y="481" text-anchor="middle">user, one time</text>
+
+<rect x="185" y="508" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="527" text-anchor="middle">6 · scheduler / executor</text>
+<text class="ts" x="350" y="543" text-anchor="middle">wake · re-validate · cart</text>
+
+<rect x="185" y="570" width="330" height="44" rx="8" fill="var(--bg-warning)" stroke="var(--border-warning)"/>
+<text class="t" x="350" y="589" text-anchor="middle">one-tap confirm + guardrail</text>
+<text class="ts" x="350" y="605" text-anchor="middle">allergen · spend · price</text>
+
+<rect x="185" y="632" width="330" height="44" rx="8" fill="var(--surface-1)" stroke="var(--border)"/>
+<text class="t" x="350" y="651" text-anchor="middle">7 · tracking / feedback</text>
+<text class="ts" x="350" y="667" text-anchor="middle">learn preferences</text>
+
+<line x1="350" y1="118" x2="350" y2="134" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="180" x2="350" y2="196" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="242" x2="350" y2="258" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="304" x2="350" y2="320" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="366" x2="350" y2="382" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="428" x2="350" y2="444" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="490" x2="350" y2="506" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="552" x2="350" y2="568" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+<line x1="350" y1="614" x2="350" y2="630" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+
+<rect x="545" y="198" width="100" height="44" rx="8" fill="var(--bg-accent)" stroke="var(--border-accent)"/>
+<text class="t" x="595" y="217" text-anchor="middle">Swiggy MCP</text>
+<text class="ts" x="595" y="233" text-anchor="middle">search menu</text>
+<line x1="515" y1="220" x2="543" y2="220" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+
+<rect x="545" y="508" width="100" height="44" rx="8" fill="var(--bg-accent)" stroke="var(--border-accent)"/>
+<text class="t" x="595" y="527" text-anchor="middle">Swiggy MCP</text>
+<text class="ts" x="595" y="543" text-anchor="middle">place order</text>
+<line x1="515" y1="530" x2="543" y2="530" stroke="var(--text-secondary)" marker-end="url(#ar)"/>
+
+<rect x="25" y="136" width="125" height="540" rx="8" fill="var(--bg-accent)" stroke="var(--border-accent)"/>
+<text class="t" x="87" y="398" text-anchor="middle">state store</text>
+<text class="ts" x="87" y="416" text-anchor="middle">prefs · plan</text>
+<text class="ts" x="87" y="432" text-anchor="middle">ledger · history</text>
+
+<polyline points="185,654 163,654 163,158 183,158" fill="none" stroke="var(--text-secondary)" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+</svg>
+</main>
+</body>
+</html>
