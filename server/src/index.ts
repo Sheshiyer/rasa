@@ -49,3 +49,11 @@ export {
   createNutritionAgent,
   type NutritionCacheStore,
 } from "./agents/nutrition/nutrition-agent";
+
+// M4 — Preferences Agent + onboarding
+export {
+  createPreferencesAgent,
+  extractJson,
+  type ProcessResult,
+  type MissingQuestion,
+} from "./agents/preferences";

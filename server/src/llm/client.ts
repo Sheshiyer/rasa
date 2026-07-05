@@ -23,4 +23,10 @@ export interface LlmClient {
     description?: string;
     portion_g: number;
   }): Promise<Macros>;
+  /**
+   * Coerce a malformed onboarding paste toward valid OnboardingProfile JSON. MUST only
+   * reformat/repair — never fabricate an allergen or diet value the user didn't state.
+   * Returns a candidate object to re-validate.
+   */
+  repairProfile(input: { rawText: string; issues: string[] }): Promise<unknown>;
 }

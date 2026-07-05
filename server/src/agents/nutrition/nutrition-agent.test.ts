@@ -46,6 +46,9 @@ const stubLlm: LlmClient = {
       fat_g: 7 * f,
     };
   },
+  async repairProfile() {
+    return {};
+  },
 };
 
 function dish(name: string): CandidateDish {

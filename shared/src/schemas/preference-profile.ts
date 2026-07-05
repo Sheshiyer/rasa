@@ -58,3 +58,26 @@ export const PreferenceProfileSchema = z
   })
   .strict();
 export type PreferenceProfile = z.infer<typeof PreferenceProfileSchema>;
+
+/**
+ * The subset the copy-paste onboarding prompt emits — every PreferenceProfile field
+ * except `user_id`, `delivery_address_id`, `source_prefs` (filled app-side). NOT strict
+ * (extra LLM keys are stripped). `allergens` is REQUIRED here (no default) so "no
+ * allergens" is an explicit user statement, never a silently-inferred hard constraint.
+ */
+export const OnboardingProfileSchema = z.object({
+  diet_type: DietTypeSchema,
+  cuisines_like: z.array(z.string()).default([]),
+  cuisines_avoid: z.array(z.string()).default([]),
+  allergens: z.array(z.string()), // REQUIRED — never fabricated
+  dislikes: z.array(z.string()).default([]),
+  spice_level: SpiceLevelSchema,
+  meals_per_day: z.number().int().min(1).max(6),
+  slots: z.array(SlotSchema).min(1),
+  budget_monthly_inr: z.number().int().positive(),
+  calorie_target: z.number().int().positive(),
+  macro_target: MacroTargetSchema,
+  variety_tolerance: VarietyToleranceSchema,
+  cheat_rules: CheatRulesSchema.nullable().optional(),
+});
+export type OnboardingProfile = z.infer<typeof OnboardingProfileSchema>;
