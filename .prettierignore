@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+pnpm-lock.yaml
+
+# Content, not code — authored by brand/genesis/planning steps; not Prettier's job.
+.brandmint/
+docs/
+data/
+db/
