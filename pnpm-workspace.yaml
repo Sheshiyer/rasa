@@ -1,5 +1,5 @@
 packages:
   - "shared"
-  # server (M1+) and app (M9) join the workspace as they are scaffolded:
-  # - "server"
+  - "server"
+  # app (M9) joins the workspace as it is scaffolded:
   # - "app"
