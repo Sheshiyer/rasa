@@ -8,7 +8,7 @@ A thoughtseed product branch. A user answers a few preference questions — via 
 
 ## Status
 
-**M0 + M1 complete** (TDD) — pnpm monorepo, `@rasa/shared` Zod schemas (six spec §6 entities), `SourceAdapter` moat boundary, and `@rasa/server`'s Swiggy MCP stack: OAuth2.1/PKCE, the 14 typed tool wrappers, a deterministic `mock-swiggy-mcp`, and `SwiggyAdapter.discover()`. `pnpm test` (**79 tests**) green, `pnpm typecheck` + `pnpm lint` clean. Next: **M2** — state store + repositories.
+**M0 → M2 complete** (TDD) — pnpm monorepo; `@rasa/shared` Zod schemas (six spec §6 entities) + `SourceAdapter` moat boundary; `@rasa/server`'s Swiggy MCP stack (OAuth2.1/PKCE, 14 typed tool wrappers, deterministic `mock-swiggy-mcp`, `SwiggyAdapter.discover()`); and the state store (`0001_init.sql` DDL + RLS, `RasaDb.withUser()`, repositories for all entities, pglite-backed integration tests). `pnpm test` (**84 tests**) green, `pnpm typecheck` + `pnpm lint` clean. Next: **M3** — nutrition pipeline.
 
 - **Design spec + architecture:** [`docs/superpowers/specs/2026-07-05-monthlymealprep-design.md`](docs/superpowers/specs/2026-07-05-monthlymealprep-design.md)
 - **Architecture diagram:** [`docs/architecture/runtime-agent-pipeline.html`](docs/architecture/runtime-agent-pipeline.html)
