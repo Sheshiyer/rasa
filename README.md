@@ -8,7 +8,7 @@ A thoughtseed product branch. A user answers a few preference questions — via 
 
 ## Status
 
-**M0 complete** — pnpm monorepo scaffold + `@rasa/shared` Zod schemas (all six spec §6 entities) under TDD. `pnpm test` (36 tests) green, `pnpm typecheck` + `pnpm lint` clean.
+**M0 + M1 complete** (TDD) — pnpm monorepo, `@rasa/shared` Zod schemas (six spec §6 entities), `SourceAdapter` moat boundary, and `@rasa/server`'s Swiggy MCP stack: OAuth2.1/PKCE, the 14 typed tool wrappers, a deterministic `mock-swiggy-mcp`, and `SwiggyAdapter.discover()`. `pnpm test` (**79 tests**) green, `pnpm typecheck` + `pnpm lint` clean. Next: **M2** — state store + repositories.
 
 - **Design spec + architecture:** [`docs/superpowers/specs/2026-07-05-monthlymealprep-design.md`](docs/superpowers/specs/2026-07-05-monthlymealprep-design.md)
 - **Architecture diagram:** [`docs/architecture/runtime-agent-pipeline.html`](docs/architecture/runtime-agent-pipeline.html)
