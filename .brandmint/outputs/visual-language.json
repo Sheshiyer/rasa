@@ -1,0 +1,80 @@
+{
+  "skill": "visual-language",
+  "cluster": "identity",
+  "wave": 3,
+  "status": "complete",
+  "version": "1.0.0",
+  "extends": "visual-identity-core.json",
+  "data": {
+    "brand_name": "Rasa",
+    "essence": "The visual language of a balanced meal, not a diet app. Warm, calm, honest, unobtrusive — a competent friend who has your food handled.",
+    "design_principles": [
+      { "principle": "Calm over loud", "detail": "Generous cream space, one action per screen, quiet motion. Rasa never nags or shouts macros." },
+      { "principle": "Honest over glossy", "detail": "Real portions, real prices, estimates labelled as estimates. Nothing is dressed up to look better than the food that arrives." },
+      { "principle": "Warm over clinical", "detail": "Spice-warm palette, rounded plate/bowl shapes, humanist type. Health reads as everyday balance, not a lab report." },
+      { "principle": "The tap is sacred", "detail": "The one-tap confirm is the visual climax of every flow — tomato accent, clear number, clear time. Nothing is spent silently." },
+      { "principle": "Numbers you can trust at a glance", "detail": "Tabular figures, aligned columns, a visible spend ledger. The maths is always in view." }
+    ],
+    "shape_language": {
+      "core": "Soft rounded rectangles and full circles echoing plates, bowls and the tap target.",
+      "corner_radius": { "cards": "16px", "buttons": "12px (pill for the confirm CTA)", "chips": "full pill", "sheets": "20px top corners" },
+      "motifs": ["bowl outline", "plate circle", "spice dot", "a level line for 'balance'"],
+      "avoid": ["sharp corners", "hard 90-degree data-grid feel", "aggressive angular 'tech' shapes"]
+    },
+    "texture_and_surface": {
+      "surfaces": "Matte, flat, warm cream. No gradients on brand surfaces, no gloss, no fake depth.",
+      "grain": "At most a very subtle warm paper grain on large backgrounds; never over content.",
+      "shadows": "Soft, low, warm-tinted (never grey-blue). Elevation is gentle — a card lifting a few millimetres, not floating.",
+      "avoid": ["glassmorphism", "neon glows", "food-photo gloss", "drop shadows on the logo"]
+    },
+    "pattern": {
+      "primary_pattern": "A light repeating motif of small bowls and spice dots ('the spice-dot field') in Oat on Cream.",
+      "usage": "Quiet background texture on empty states, email headers, splash — never behind body text or numbers.",
+      "density": "Sparse; ~8-12% coverage; large negative space.",
+      "reference": "See pattern-library.json."
+    },
+    "layout_system": {
+      "grid": "4px base spacing unit; 8px rhythm; mobile-first single column; 12-col on marketing web.",
+      "spacing_scale": [4, 8, 12, 16, 24, 32, 48, 64],
+      "density": "Airy. One primary decision per screen: the plan, the meal, the confirm.",
+      "cards": "Cream/ivory cards on cream background separated by soft shadow and hairline, not heavy borders.",
+      "data_blocks": "Macro and price blocks are visually grouped, right-aligned figures, tabular.",
+      "hierarchy": "Header (General Sans) → supporting body (Inter) → figures (tabular) → estimate caption (Kettle Slate)."
+    },
+    "motion_principles": {
+      "character": "Gentle, purposeful, brief. Motion confirms, it never performs.",
+      "timing": { "micro": "150ms ease-out", "standard": "220ms ease-out", "sheet": "300ms ease-in-out" },
+      "signature_moments": [
+        { "moment": "Plan assembled", "motion": "Meal cards settle in softly, top to bottom, like dishes being laid on a table." },
+        { "moment": "One-tap confirm", "motion": "The tomato button gives a single calm press-and-settle; a soft check draws in on success. No bounce, no confetti." },
+        { "moment": "Under-cap", "motion": "The spend bar eases to its new value in green; the number counts up in tabular figures." }
+      ],
+      "avoid": ["bouncy spring overshoot", "confetti/celebration blasts", "attention-grabbing pulsing", "anything that makes a spend feel like a game"]
+    },
+    "iconography_direction": {
+      "style": "Line-and-fill, rounded, friendly, geometric — never cartoonish.",
+      "reference": "See icon-system.json.",
+      "stroke": "2px rounded caps/joins on a 24px grid."
+    },
+    "photography_direction": {
+      "summary": "Real, warm, top-down and close-up food on cream or wood; natural light; honest portions; everyday Indian home and desk contexts.",
+      "reference": "See lifestyle-photography.json, product-photography.json, hero-images.json."
+    },
+    "dos_and_donts": {
+      "do": [
+        "Lead with cream and negative space.",
+        "Use the tomato accent only for the confirm/action moment.",
+        "Show real food and real numbers.",
+        "Keep motion calm and brief.",
+        "Label every nutrition figure as an estimate."
+      ],
+      "dont": [
+        "Don't use diet-app red/green scold cues or 'good food / bad food' framing.",
+        "Don't gamify spending or celebrate ordering with confetti.",
+        "Don't use glossy fast-food or staged studio-kitchen imagery.",
+        "Don't crowd screens; one decision at a time.",
+        "Don't imply medical or 'doctor-approved' benefit anywhere in the visuals."
+      ]
+    }
+  }
+}

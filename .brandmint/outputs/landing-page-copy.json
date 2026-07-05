@@ -1,0 +1,104 @@
+{
+  "skill": "landing-page-copy",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "meta": {
+      "title": "Rasa — a month of meals, planned to your macros and budget",
+      "description": "Rasa plans a month of meals around your macros and your budget, then orders them for you a tap at a time — through Swiggy. No daily 'what do I eat.' No blown budget. You always tap yes.",
+      "og_title": "Sorted your lunch. Tap to confirm. — Rasa",
+      "og_description": "For people who already order in every day: a month planned to your macros and your budget, ordered one tap at a time.",
+      "voice_note": "Sentence case throughout. Calm, warm, pragmatic. Never a diet scold. Nutrition is always 'estimated'. No convenience-fee framing."
+    },
+    "hero": {
+      "eyebrow": "For people who already order in every day",
+      "headline": "A month of meals, planned to your macros and budget — ordered with one tap.",
+      "subheadline": "Rasa plans your month around what you're eating for and what you can spend, then quietly gets each meal to your door through Swiggy. No 4pm 'what do I eat.' No blown budget. You just tap yes.",
+      "primary_cta": { "text": "Get early access", "subtext": "Free to join the waitlist." },
+      "secondary_cta": { "text": "See how it works", "subtext": "60-second tour." },
+      "reassurance": "Nothing is ordered or spent without your tap. Allergens are hard-blocked. Nutrition figures are estimates.",
+      "social_proof": "Built for metro tech folks who order 12-25 times a month and are tired of thinking about it."
+    },
+    "problem_section": {
+      "section_title": "You already order in every day. It shouldn't cost you this much time, money and guilt.",
+      "intro": "The habit isn't the problem. The daily decision, the runaway bill and the midweek diet collapse are.",
+      "pain_points": [
+        { "stat": "15 min", "headline": "lost every afternoon to 'what do I eat'", "detail": "Scrolling the same three restaurants at 4pm when your decision energy is already gone." },
+        { "stat": "₹8-15k", "headline": "a month you can't quite account for", "detail": "Peak-hunger, peak-price ordering that quietly balloons with nothing to show for it." },
+        { "stat": "Wed", "headline": "the day your diet usually falls over", "detail": "Because no delivery app tells you the protein or calories of a restaurant dish." }
+      ],
+      "closer": "You don't need another app to manage. You need one less decision and a bill you can predict."
+    },
+    "solution_section": {
+      "section_title": "Answer a few questions once. Rasa handles the month.",
+      "intro": "Tell Rasa your diet, your goals, what you can spend and what you can't stand — once. It builds a 30-day plan that fits your macros and stays under your cap, and orders each meal a tap at a time.",
+      "pillars": [
+        { "title": "Convenience gets you in", "detail": "No daily scrolling, no 4pm decision. Your routine meals are already chosen.", "icon": "action-paste" },
+        { "title": "Macros are the value", "detail": "Food that fits your protein and calorie targets across the day — estimated, honest, aggregated.", "icon": "macro-balanced" },
+        { "title": "Budget is the guardrail", "detail": "A hard monthly cap with per-meal envelopes and coupons applied. Eat out daily, stay under the number you set.", "icon": "budget-cap" }
+      ],
+      "differentiator": "Trackers tell you what you ate. Delivery apps sell you convenience. Rasa is the only one that plans the month, hits the macros, caps the spend — and actually orders the food."
+    },
+    "how_it_works": {
+      "section_title": "Set it up once. Tap yes at mealtimes. That's it.",
+      "intro": "The month is planned once. The macros and budget hold. The ordering just happens — after your tap.",
+      "steps": [
+        { "number": 1, "title": "Tell Rasa about you", "detail": "Answer a short interview in the app — or paste it into your own ChatGPT/Claude and paste the result back. Diet, allergens, budget, goals, spice, dislikes." },
+        { "number": 2, "title": "Approve your month", "detail": "Rasa builds a 30-day plan that fits your macros and your cap, with variety built in. Review it once and approve." },
+        { "number": 3, "title": "Tap to confirm each meal", "detail": "Before every order, Rasa checks the restaurant, the price and the fit, then nudges you: 'Grilled chicken bowl, ₹240, arrives ~12:35 — confirm?' A 5-second yes. Never behind your back." },
+        { "number": 4, "title": "It learns as you go", "detail": "Rate a meal and the plan gets smarter — better picks, less repetition, closer to your taste every week." }
+      ],
+      "reassurance": "Change a meal in a tap. Skip a day. Adjust your cap. You're always in control."
+    },
+    "proof_points": {
+      "section_title": "Why you can trust it with your food and your money",
+      "points": [
+        { "title": "You always tap yes", "detail": "One-tap approve on every single order. Nothing is spent silently, ever." },
+        { "title": "Allergens are hard-blocked", "detail": "Anything you flag is blocked before it can reach your cart — not filtered later, blocked first." },
+        { "title": "A visible spend ledger", "detail": "See planned vs actual, this meal, this day, this month — always in view, always under your cap." },
+        { "title": "Honest 'estimated' macros", "detail": "Grounded in an India-native food database and labelled as estimates. Wellness, not medical claims." }
+      ]
+    },
+    "audience_section": {
+      "section_title": "Made for the way you already eat",
+      "personas": [
+        { "name": "The one buried in sprints", "detail": "You order in daily and just want it to stop costing you 15 minutes, ₹12k a month and your protein target." },
+        { "name": "The one tracking macros", "detail": "Your meal prep dies by Wednesday. Rasa orders food that actually fits your numbers, so you don't have to cook to stay on plan." }
+      ]
+    },
+    "pricing": {
+      "section_title": "A health-framed subscription. Never a convenience fee.",
+      "intro": "You pay for the planning, the macros and the budget guardrail — the part that saves you money and keeps you on track. Not for the privilege of ordering.",
+      "tiers": [
+        { "name": "Core", "price": "₹149-299/mo", "description": "The month, planned to your macros and budget, ordered a tap at a time.", "best_for": "Anyone who orders in most days.", "features": ["30-day plan to your macros", "Hard monthly budget cap + coupons", "One-tap ordering via Swiggy", "Allergen hard-block", "Visible spend ledger", "Learns your taste over time"], "cta": "Get early access", "featured": true },
+        { "name": "Plus (coming later)", "price": "₹500-999/mo", "description": "For fitness goals and, later, planning for a parent.", "best_for": "Macro-trackers and higher-touch needs.", "features": ["Everything in Core", "Tighter macro targeting", "Priority support", "Early access to cross-platform (Zomato, Instamart, tiffin)"], "cta": "Join the waitlist" }
+      ],
+      "note": "Rasa also earns from platform partnerships — so the subscription can stay small. We will never add a surcharge to your food."
+    },
+    "faq": {
+      "section_title": "The honest questions",
+      "questions": [
+        { "question": "Will Rasa spend my money without me?", "answer": "No — never. Every order needs a one-tap confirm from you, with the dish, the price and the arrival time shown. If you don't tap, nothing is ordered and nothing is charged. This is the one rule we won't break." },
+        { "question": "Can restaurant macros really be trusted?", "answer": "They're honest estimates, not lab numbers, and we label them as estimates everywhere. We ground each dish in an India-native food database and target your macros across the whole day (roughly within 10-15% at the daily level), so small per-dish errors even out. We make no medical or disease claims." },
+        { "question": "Won't the plan get repetitive?", "answer": "The planner builds in variety and anti-repetition, and it learns from your ratings — so it drifts toward what you like and away from what you don't. And you can swap any meal for a fallback in a single tap." },
+        { "question": "Which apps does it order from?", "answer": "Swiggy at launch. Zomato, Instamart and tiffin are next — one plan and one budget across every food source is where Rasa is headed." },
+        { "question": "Do I have to stop ordering the food I love?", "answer": "No. Rasa plans your routine meals so you stop thinking about them — your cheat days and off-plan cravings are yours. Set a cheat rule and it works around it." },
+        { "question": "Is my allergy actually safe here?", "answer": "Allergens you flag are hard-blocked before anything reaches your cart. That said, restaurant data isn't perfect, so we surface it clearly and never hide behind a filter — you stay informed and in control." }
+      ]
+    },
+    "final_cta": {
+      "headline": "Stop deciding lunch. Start tapping yes.",
+      "subheadline": "Join the early-access list. Free to join, and you'll be first to plan a month that actually stays balanced and under budget.",
+      "primary_cta": "Get early access",
+      "secondary_cta": "See how it works",
+      "reassurance": "One tap per order. Allergens hard-blocked. Nutrition figures are estimates."
+    },
+    "footer": {
+      "tagline": "Rasa — taste, balanced.",
+      "links": ["How it works", "Pricing", "FAQ", "Privacy", "Terms"],
+      "disclaimer": "Nutrition figures shown in Rasa are wellness estimates, not medical advice or diagnostic claims. Always consult a qualified professional for medical dietary needs."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "skill": "prelaunch-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_name": "Rasa pre-launch / waitlist nurture sequence",
+    "trigger": "User joins the early-access waitlist before launch",
+    "goal": "Keep waitlisters warm, build trust in the one-tap and estimate model, and prime the copy-paste onboarding prompt as a shareable growth loop.",
+    "voice_note": "Calm, warm, confident, quietly witty. Sentence case. No hype, no false scarcity, no medical claims. Nutrition = estimates.",
+    "cadence": "Email 1 immediately; 2 at +3 days; 3 at +8 days; 4 at +14 days; 5 on launch day.",
+    "emails": [
+      {
+        "number": 1,
+        "send": "Immediately on joining waitlist",
+        "subject": "You're on the list — here's what we're building",
+        "preview": "A month of meals, planned to your macros and budget.",
+        "body": "Hi {{first_name}},\n\nThanks for joining the Rasa early-access list. You're in.\n\nHere's the promise, plainly: Rasa plans a month of meals around your macros and your budget, then orders them for you a tap at a time — starting with Swiggy. No daily 'what do I eat.' No blown budget. No falling off your diet by Wednesday.\n\nAnd the line we won't cross: nothing gets ordered or spent without your tap.\n\nWe'll send you a few honest notes before launch — no hype, just what it is and how it works. Reply any time; a real person reads it.\n\nGlad you're here,\nThe Rasa team",
+        "cta": null
+      },
+      {
+        "number": 2,
+        "send": "+3 days",
+        "subject": "The part everyone asks about first: 'will it spend my money?'",
+        "preview": "Short answer: only when you tap yes.",
+        "body": "Hi {{first_name}},\n\nWhen we describe Rasa, the first question is almost always the same: is it going to order things behind my back?\n\nNo. Here's exactly how it works. Before every order, Rasa checks the restaurant, the price and whether the meal still fits your plan — then nudges you with the dish, the price and the arrival time. You tap yes, or you don't. If you don't, nothing is ordered and nothing is charged.\n\nAllergens you flag are hard-blocked before anything reaches your cart. And there's a spend ledger you can open any time, showing planned vs actual against your cap.\n\nSmart, but never behind your back. That's the whole design.\n\nThe Rasa team",
+        "cta": null
+      },
+      {
+        "number": 3,
+        "send": "+8 days",
+        "subject": "Can restaurant macros actually be trusted?",
+        "preview": "Honest estimates, aggregated across the day.",
+        "body": "Hi {{first_name}},\n\nFair question — restaurant dishes don't come with a nutrition label. So here's how Rasa handles macros, honestly.\n\nWe ground each dish in an India-native food database, estimate a sensible portion, and target your macros across the whole day rather than obsessing over any single dish. Small per-dish errors tend to cancel out, so the daily total lands roughly within 10-15%.\n\nWe label every figure as an estimate, because that's what it is. Rasa is about everyday balance — not medical claims, not precision you can't actually get from a menu.\n\nWe'd rather be honest than impressive.\n\nThe Rasa team",
+        "cta": null
+      },
+      {
+        "number": 4,
+        "send": "+14 days",
+        "subject": "A prompt you can try before we even launch",
+        "preview": "Run your own meal-preference interview in ChatGPT or Claude.",
+        "body": "Hi {{first_name}},\n\nWant a taste of how onboarding will feel? Here's a shareable Rasa prompt you can paste into your own ChatGPT or Claude today. It interviews you about your diet, goals, budget and dislikes, then hands you a tidy profile.\n\nWhen Rasa launches, you'll paste that profile straight in and skip setup. Until then, it's a genuinely useful way to think through how you eat — and it's fun to share with the friend who also lives on delivery.\n\n[Get the prompt]\n\nNot long now.\nThe Rasa team",
+        "cta": "Get the prompt"
+      },
+      {
+        "number": 5,
+        "send": "Launch day",
+        "subject": "Rasa is live — your month is waiting",
+        "preview": "Set it up once. Tap yes at mealtimes.",
+        "body": "Hi {{first_name}},\n\nIt's here. As an early-access member, you're first in.\n\nSet up your profile (or paste in the one you made with the prompt), approve your 30-day plan, and start tapping yes at mealtimes. Your routine meals, planned to your macros and your cap, ordered a tap at a time through Swiggy.\n\n[Start with Rasa]\n\nThank you for waiting with us. Now go stop deciding lunch.\n\nThe Rasa team\n\nP.S. One tap per order. Allergens hard-blocked. Nutrition figures are estimates.",
+        "cta": "Start with Rasa"
+      }
+    ]
+  }
+}

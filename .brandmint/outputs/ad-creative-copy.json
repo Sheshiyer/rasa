@@ -1,0 +1,79 @@
+{
+  "skill": "ad-creative-copy",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "voice_note": "Calm, warm, pragmatic, quietly witty. Sentence case. Health-framed, never convenience-fee framed. Every nutrition mention is an estimate. No medical claims. One-tap always honoured — never imply silent auto-ordering.",
+    "channels": ["Instagram/Facebook feed + stories", "LinkedIn (tech professionals)", "Google search", "tech Discords / Reddit (native copy)"],
+    "angles": ["convenience", "health/macros", "budget", "trust/control", "identity"],
+    "ads": [
+      {
+        "id": "ad_01",
+        "angle": "convenience",
+        "platform": "Instagram / Facebook feed",
+        "headline": "Stop deciding lunch. Start tapping yes.",
+        "primary_text": "You already order in every day. Rasa plans your month around your macros and your budget, then nudges you at mealtime: 'Grilled chicken bowl, ₹240, arrives ~12:35 — confirm?' You tap yes. That's the whole thing. No 4pm 'what do I eat.'",
+        "cta": "Get early access"
+      },
+      {
+        "id": "ad_02",
+        "angle": "health/macros",
+        "platform": "LinkedIn",
+        "headline": "Hit your protein target without cooking or tracking.",
+        "primary_text": "Your meal prep dies by Wednesday. Rasa orders restaurant food that fits your macros — estimated across the day, honest about it — so you stay on plan while ordering in. Delivery apps sell convenience; trackers tell you what you ate. Rasa actually orders food that fits your numbers.",
+        "cta": "See how it works"
+      },
+      {
+        "id": "ad_03",
+        "angle": "budget",
+        "platform": "Instagram stories",
+        "headline": "Eat out daily. Still end the month under your number.",
+        "primary_text": "That ₹8-15k delivery bill you can't account for? Rasa sets a hard monthly cap, spreads it across the month, applies coupons, and keeps a ledger you can actually see. Order in every day — and stay under the cap you set. Never a fee on your food.",
+        "cta": "Get early access"
+      },
+      {
+        "id": "ad_04",
+        "angle": "trust/control",
+        "platform": "Reddit / Discord (native)",
+        "headline": "An AI meal planner that never spends your money silently.",
+        "primary_text": "Skeptical of 'AI orders your food'? So were we. Rasa plans your month, but every single order needs your one-tap confirm — dish, price, arrival time, then you tap. No tap, no charge. Allergens hard-blocked before anything hits your cart. Macros labelled as estimates. It's the boring, honest version — which is the version you'd actually trust.",
+        "cta": "Join the waitlist"
+      },
+      {
+        "id": "ad_05",
+        "angle": "convenience",
+        "platform": "Google search",
+        "headline": "A month of meals, one tap each | Rasa",
+        "primary_text": "Planned to your macros and your budget, ordered via Swiggy a tap at a time. No daily decision, no blown budget. Health-framed subscription from ₹149/mo.",
+        "cta": "Get early access"
+      },
+      {
+        "id": "ad_06",
+        "angle": "identity",
+        "platform": "Instagram / LinkedIn",
+        "headline": "Eat like an adult who has their life handled.",
+        "primary_text": "Not a diet coach yelling macros. The competent friend who cooks. Rasa quietly plans your month, keeps you roughly on your numbers, holds your budget — and hands you a 5-second tap at mealtimes. Sorted.",
+        "cta": "Get early access"
+      },
+      {
+        "id": "ad_07",
+        "angle": "health/budget",
+        "platform": "Instagram carousel",
+        "headline": "Convenience gets you in. Macros and budget are why you stay.",
+        "primary_text": "Card 1: No more 4pm 'what do I eat.' Card 2: Food that fits your protein target, estimated across the day. Card 3: A hard monthly cap you actually hold. Card 4: One tap per order — nothing spent silently. Rasa: taste, balanced.",
+        "cta": "Get early access"
+      },
+      {
+        "id": "ad_08",
+        "angle": "convenience/witty",
+        "platform": "Instagram stories",
+        "headline": "Your Swiggy history called. It wants an intervention.",
+        "primary_text": "Same three restaurants, peak-hour prices, protein nowhere in sight. Rasa plans your month to your macros and your cap, and orders a tap at a time. Kinder to your body and your bill — and still you, tapping yes.",
+        "cta": "Get early access"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "skill": "lifestyle-photography",
+  "cluster": "photography",
+  "wave": 4,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "art_direction_summary": "Everyday Indian life where a good meal quietly arrives between the demands of the day. Not aspirational studio kitchens, not glossy delivery ads — real desks, real flats, real light. The mood is relief and calm control: someone busy who is, for once, well fed and within budget.",
+    "subject": "Metro Indian tech professionals (26-35) and macro-trackers in their real contexts — a home desk at 1pm, a couch at 8pm, a phone showing a one-tap confirm, a delivery bag set down beside a laptop.",
+    "framing": [
+      "Human hands and phone in frame; the app's one-tap moment visible but not screen-hero.",
+      "A delivered meal in its real container or plated simply, mid-day, beside work.",
+      "Over-the-shoulder of the plan being approved on a Sunday evening.",
+      "Candid, slightly imperfect crops — lived-in, not staged."
+    ],
+    "lighting": "Natural daylight from a window; soft, warm, directional. Late-morning or golden-hour indoor light. No hard flash, no cold office fluorescents, no studio ring-light gloss.",
+    "palette": "Warm cream and wood tones, saffron and green accents from the food and app; muted, desaturated surroundings so the food and the calm read first. Ripe tomato appears only as a real food colour or the confirm button on screen.",
+    "mood": ["relief", "calm control", "everyday", "unfussy", "quietly cared for"],
+    "composition_rules": [
+      "Real portions — a normal lunch, not a banquet.",
+      "Honest containers — delivery boxes and everyday crockery are welcome, not hidden.",
+      "Negative space and breathing room; never cluttered.",
+      "The phone/app is a supporting character, never a hard product-shot."
+    ],
+    "wardrobe_and_context": "Casual-professional Indian everyday wear; flats and shared apartments, WFH desks, small kitchens, office pantries in Bengaluru/Hyderabad/Pune/Gurgaon.",
+    "diversity": "Range of skin tones, genders, body types, and home types across metro India; no idealised or 'fitness-model' bodies; represent both 'Deadline Deepak' and 'Macro Meera' honestly.",
+    "avoid": [
+      "Glossy fast-food gloss, dripping cheese-pull hero shots, artificial garnish.",
+      "Aspirational marble studio kitchens with no one in them.",
+      "Diet-app clichés — measuring tapes, before/after bodies, scales, 'guilt' imagery.",
+      "Perfectly styled flat-lays that look like an ad; keep it real."
+    ],
+    "sample_shot_list": [
+      { "id": "life_01", "title": "The 1pm confirm", "scene": "A developer at a home desk glances at their phone mid-task; the screen shows 'Grilled chicken bowl, ₹240, arrives ~12:35 — confirm?'. Half-open laptop, warm window light, an empty cup. Relief, not excitement." },
+      { "id": "life_02", "title": "Meal arrives between meetings", "scene": "A delivery bag just set down beside a laptop with a call on screen; a hand reaching for it. The meal is the reward for staying in flow." },
+      { "id": "life_03", "title": "Sunday plan approval", "scene": "Over-the-shoulder, evening, someone on a couch scrolling next week's plan on the app — a calm review, tea in hand." },
+      { "id": "life_04", "title": "Honest lunch, plated simply", "scene": "A real rajma chawal or chicken bowl in everyday crockery on a wooden desk, top-down, natural light, a macro chip subtly visible on the phone beside it." },
+      { "id": "life_05", "title": "End-of-month, under cap", "scene": "A quiet moment: the app's spend ledger showing 'stayed under ₹9,000', a small satisfied smile, no fanfare." },
+      { "id": "life_06", "title": "Macro Meera's desk", "scene": "A fitness-minded professional post-workout at a standing desk; a high-protein delivered meal and a water bottle; the macro chip in view. Capable, not obsessive." }
+    ]
+  }
+}

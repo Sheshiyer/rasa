@@ -1,0 +1,38 @@
+{
+  "skill": "product-photography",
+  "cluster": "photography",
+  "wave": 4,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "art_direction_summary": "Two product subjects: the food itself (real Indian dishes, honestly shot) and the app UI (calm, cream, one clear action). Both read as trustworthy and appetising without gloss. Food is the hero; the app is the quiet helper.",
+    "food_photography": {
+      "subject": "Real Indian delivery-and-tiffin dishes — grilled chicken bowl, rajma chawal, paneer butter masala with roti, dal, biryani, South Indian thali.",
+      "framing": "Top-down (90 degrees) and low three-quarter (25-35 degrees) close-ups; single dish or a small honest spread.",
+      "surface": "Warm cream, raw wood, or matte ceramic; occasional banana-leaf or steel thali for authenticity.",
+      "lighting": "Soft natural window light, single source, gentle shadow; matte finish, no reflective gloss or glycerine sheen.",
+      "portion": "Honest, real portions — what actually arrives, not a styled banquet.",
+      "styling": "Minimal, real garnish (a coriander sprig that would actually be there); no artificial props, no fake steam, no dripping cheese-pulls.",
+      "palette": "Natural food colour foregrounded on cream/wood; saffron and green harmonise with the brand.",
+      "avoid": ["glossy fast-food gloss", "over-saturation", "fake garnish", "studio spotlight drama", "unrealistic abundance"]
+    },
+    "app_ui_photography": {
+      "subject": "The Rasa app on a modern Android/iOS phone — plan view, meal card, one-tap confirm sheet, spend ledger.",
+      "framing": "Straight-on device mockup and in-hand angled shots; screen crisp and legible.",
+      "surface": "Cream or wood background; device in a warm, matte case.",
+      "lighting": "Even, soft; screen legible with no glare.",
+      "screen_content": "Real, believable content — actual dish names, rupee prices, tabular macros, the tomato confirm button, an estimate disclaimer visible.",
+      "palette": "The app's cream UI with saffron/green accents and the tomato confirm; consistent with color-palette.json.",
+      "avoid": ["fake perfect '10,000 kcal saved' numbers", "screens that overstate accuracy or imply medical claims", "cluttered dashboards; keep one action per screen"]
+    },
+    "sample_shot_list": [
+      { "id": "prod_01", "title": "Grilled chicken bowl, top-down", "scene": "Single bowl on cream, top-down, soft light, a small macro chip card tucked beside it. Appetising and honest." },
+      { "id": "prod_02", "title": "Paneer butter masala + roti", "scene": "Low three-quarter on wood, real portion, matte finish, coriander garnish." },
+      { "id": "prod_03", "title": "The confirm sheet in-hand", "scene": "Phone held in one hand over a desk, the one-tap confirm sheet on screen: dish, ₹price, ETA, tomato 'Confirm' button." },
+      { "id": "prod_04", "title": "The 30-day plan view", "scene": "Straight-on device mockup on cream showing a calm scrollable month of meals with macro and price chips." },
+      { "id": "prod_05", "title": "Spend ledger, under cap", "scene": "Device screen showing the green under-cap ledger and tabular monthly total." },
+      { "id": "prod_06", "title": "Honest thali", "scene": "A real steel thali, top-down, natural light — the everyday meal, not a feast." }
+    ]
+  }
+}

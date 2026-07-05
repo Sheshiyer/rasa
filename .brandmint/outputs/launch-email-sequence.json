@@ -1,0 +1,48 @@
+{
+  "skill": "launch-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_name": "Rasa launch sequence",
+    "trigger": "Public launch — sent to broader list / new signups during launch window",
+    "goal": "Convert interest into a completed profile and a first confirmed order; land the positioning (convenience hook, macros value, budget guardrail) and the trust model (one-tap, allergen block, estimates).",
+    "voice_note": "Calm, warm, confident, quietly witty. Sentence case. Health-framed, never convenience-fee framed. Nutrition = estimates. No medical claims.",
+    "cadence": "Email 1 on launch; 2 at +2 days; 3 at +4 days; 4 at +7 days (soft close).",
+    "emails": [
+      {
+        "number": 1,
+        "send": "Launch day",
+        "subject": "Sorted your month. Tap to confirm.",
+        "preview": "A month of meals, planned to your macros and budget — now live.",
+        "body": "Hi {{first_name}},\n\nRasa is live.\n\nIf you already order in most days, this is for you. Answer a few questions once — diet, goals, budget, dislikes — and Rasa builds a 30-day plan that fits your macros and stays under your cap, then orders each meal a tap at a time through Swiggy.\n\nNo 4pm 'what do I eat.' No bill you can't account for. No diet that dies on Wednesday.\n\nAnd the rule we won't break: nothing is ordered or spent without your tap.\n\n[Get started]\n\nThe Rasa team",
+        "cta": "Get started"
+      },
+      {
+        "number": 2,
+        "send": "+2 days",
+        "subject": "What Rasa actually does for the ₹149 a month",
+        "preview": "You pay for the planning and the guardrail — never a fee on your food.",
+        "body": "Hi {{first_name}},\n\nQuick honesty about what you're paying for, because it matters.\n\nYou pay Rasa for the part that saves you money and keeps you on track: the month planned to your macros, the hard budget cap with coupons applied, the plan that learns your taste. We do not add a surcharge to your food — ever. We'd rather earn from platform partnerships and keep your subscription small.\n\nSo the maths tends to work in your favour: fewer impulse orders at peak price, a cap you actually hold, and your protein target hit without cooking or tracking.\n\n[See plans]\n\nThe Rasa team",
+        "cta": "See plans"
+      },
+      {
+        "number": 3,
+        "send": "+4 days",
+        "subject": "The three things people worry about (and the honest answers)",
+        "preview": "Silent spend, macro accuracy, repetitive plans.",
+        "body": "Hi {{first_name}},\n\nBefore you commit, here are the three real worries and our honest answers.\n\n1) 'Will it spend my money silently?' No. Every order needs your one-tap confirm, with the dish, price and time shown. No tap, no order, no charge.\n\n2) 'Can restaurant macros be trusted?' They're honest estimates, grounded in an India-native food database and targeted across the whole day (roughly within 10-15%). We label every figure as an estimate and make no medical claims.\n\n3) 'Won't it get repetitive?' The planner builds in variety and learns your ratings — and you can swap any meal in a tap.\n\nThat's the whole trust model, in the open.\n\n[Start with Rasa]\n\nThe Rasa team",
+        "cta": "Start with Rasa"
+      },
+      {
+        "number": 4,
+        "send": "+7 days (soft close)",
+        "subject": "One less decision, every single day",
+        "preview": "Your month, planned. You just tap yes.",
+        "body": "Hi {{first_name}},\n\nIf the last week was like most, you spent a couple of hours across the week deciding what to eat and a chunk of money you can't quite trace.\n\nRasa exists to give both back. Set it up once, approve your month, tap yes at mealtimes. Your meals handled, your macros roughly on track, your spend under the cap.\n\nIf now's the time, we'd love to have you.\n\n[Get started]\n\nThe Rasa team\n\nP.S. One tap per order. Allergens hard-blocked. Nutrition figures are wellness estimates, not medical advice.",
+        "cta": "Get started"
+      }
+    ]
+  }
+}

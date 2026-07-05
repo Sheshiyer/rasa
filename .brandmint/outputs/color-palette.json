@@ -1,0 +1,160 @@
+{
+  "skill": "color-palette",
+  "cluster": "identity",
+  "wave": 3,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "palette_mood": "Spice-warm and appetizing, grounded by fresh green and generous cream — nourishing and calm, never clinical or diet-app cold.",
+    "principle": "Warm hues carry appetite and care; green grounds them in balance and health; tomato is reserved for decisive confirm moments; cream does most of the background work so the interface breathes.",
+    "primary": {
+      "name": "Turmeric Saffron",
+      "hex": "#E8A33D",
+      "rgb": { "r": 232, "g": 163, "b": 61 },
+      "hsl": { "h": 36, "s": 80, "l": 57 },
+      "role": "Primary brand colour — warmth, appetite, the golden spice heart of Indian food and the 'rasa' of taste.",
+      "usage": "Logo mark, brand moments, active plan highlights, primary illustrative fills, key accents on cream.",
+      "percentage_of_palette": "10-15%",
+      "caution": "Fails body-text contrast on white; use for large text (24px+), fills and decorative marks only."
+    },
+    "secondary": {
+      "name": "Fresh Basil Green",
+      "hex": "#2F7D5B",
+      "rgb": { "r": 47, "g": 125, "b": 91 },
+      "hsl": { "h": 154, "s": 45, "l": 34 },
+      "role": "Secondary brand colour — balance, health, freshness; grounds the warm primary so Rasa reads honest, not indulgent.",
+      "usage": "Headers on cream, 'stayed under cap' and macro-fit confirmations, monochrome cream-on-green lockup, dark UI surfaces, links.",
+      "percentage_of_palette": "15-25%"
+    },
+    "accent": {
+      "name": "Ripe Tomato",
+      "hex": "#E4572E",
+      "rgb": { "r": 228, "g": 87, "b": 46 },
+      "hsl": { "h": 13, "s": 78, "l": 54 },
+      "role": "Decisive, tap-worthy accent for the moment of action — the one-tap confirm.",
+      "usage": "Confirm-order button, price-alert highlights, sparing emphasis. Reserved so a confirm always reads as a confirm.",
+      "percentage_of_palette": "5%",
+      "caution": "Never use for error/destructive states — pair with the semantic error red instead so 'confirm' and 'stop' never share a colour."
+    },
+    "backgrounds": [
+      {
+        "name": "Warm Cream",
+        "hex": "#FBF6EC",
+        "role": "Primary app and marketing background — the calm canvas everything sits on.",
+        "usage": "Page and screen backgrounds, plan cards, email body."
+      },
+      {
+        "name": "Soft Ivory",
+        "hex": "#FFFDF8",
+        "role": "Lightest surface, near-white with warmth.",
+        "usage": "Elevated cards, sheets, input fields on cream."
+      },
+      {
+        "name": "Oat",
+        "hex": "#F1E8D6",
+        "role": "Quiet second-level surface and dividers on cream.",
+        "usage": "Section bands, disabled fills, the spice-dot background pattern."
+      }
+    ],
+    "neutrals": {
+      "dark": [
+        { "name": "Charred Cardamom", "hex": "#2B2620", "role": "Primary text on cream — warm near-black, never pure #000." },
+        { "name": "Clove", "hex": "#5A5245", "role": "Secondary text, captions, metadata." },
+        { "name": "Ash", "hex": "#8A8072", "role": "Placeholder text, muted labels, disabled states." }
+      ],
+      "light": [
+        { "name": "Rice", "hex": "#E7DFD0", "role": "Borders and dividers on cream." },
+        { "name": "Steam", "hex": "#F5EEE1", "role": "Hairlines, subtle separators." }
+      ]
+    },
+    "semantic": {
+      "success": {
+        "name": "Under-Cap Green",
+        "hex": "#2F7D5B",
+        "light": "#E4EFE9",
+        "dark": "#1F5A40",
+        "usage": "Stayed-under-budget, macro-fit hit, order confirmed. Reuses the brand green so 'good' and 'balanced' feel the same."
+      },
+      "warning": {
+        "name": "Peak-Price Amber",
+        "hex": "#D9932B",
+        "light": "#FBEFD6",
+        "dark": "#9A6614",
+        "usage": "Approaching cap, price nudged up, low-confidence macro estimate flag."
+      },
+      "error": {
+        "name": "Allergen Red",
+        "hex": "#C0362C",
+        "light": "#F7E1DE",
+        "dark": "#8A241C",
+        "usage": "Allergen hard-block, order failed, over-cap stop. Deliberately deeper and cooler than Ripe Tomato so a block never reads as a confirm."
+      },
+      "info": {
+        "name": "Kettle Slate",
+        "hex": "#3C6E7A",
+        "light": "#E1EDF0",
+        "dark": "#274B54",
+        "usage": "Estimate disclaimers, tips, neutral system messages."
+      }
+    },
+    "accessibility": {
+      "wcag_level": "AA",
+      "contrast_checks": [
+        { "combination": "Charred Cardamom on Warm Cream", "foreground": "#2B2620", "background": "#FBF6EC", "ratio": "13.9:1", "passes_aa": true, "passes_aaa": true, "note": "Default body text pairing." },
+        { "combination": "Basil Green on Warm Cream", "foreground": "#2F7D5B", "background": "#FBF6EC", "ratio": "4.6:1", "passes_aa": true, "passes_aaa": false, "note": "Safe for headers and 16px+ body; good for links." },
+        { "combination": "Turmeric Saffron on Warm Cream", "foreground": "#E8A33D", "background": "#FBF6EC", "ratio": "1.7:1", "passes_aa": false, "note": "Decorative and large-display only; never body or UI text." },
+        { "combination": "Cream on Basil Green", "foreground": "#FBF6EC", "background": "#2F7D5B", "ratio": "4.6:1", "passes_aa": true, "note": "Primary reversed pairing for headers, nav and the confirm-plan hero." },
+        { "combination": "Cream on Ripe Tomato (confirm button)", "foreground": "#FFFDF8", "background": "#E4572E", "ratio": "3.5:1", "passes_aa": false, "note": "Passes AA for large/bold button text (18px+ bold). Keep confirm label bold and >=18px." },
+        { "combination": "Cream on Allergen Red", "foreground": "#FFFDF8", "background": "#C0362C", "ratio": "5.4:1", "passes_aa": true, "note": "Block and error banners." },
+        { "combination": "Clove on Warm Cream", "foreground": "#5A5245", "background": "#FBF6EC", "ratio": "6.7:1", "passes_aa": true, "passes_aaa": false, "note": "Secondary text, captions." }
+      ],
+      "recommendations": [
+        "Use Charred Cardamom for body text, never turmeric.",
+        "The one-tap confirm button uses Ripe Tomato with bold cream label at 18px+; reserve tomato for confirm actions only.",
+        "Allergen and error states use Allergen Red, kept visually distinct from the confirm tomato.",
+        "Macro and price figures use Charred Cardamom on cream with tabular figures; colour never carries the meaning alone.",
+        "Never rely on the saffron-green pairing for a red-green colour-blind-critical signal; pair colour with an icon and label."
+      ]
+    },
+    "dark_mode": {
+      "enabled": true,
+      "notes": "Rasa is cream-first; dark mode is a warm charcoal, not blue-black, keeping the kitchen-warm feel at night.",
+      "mappings": {
+        "background": { "light": "#FBF6EC", "dark": "#1E1B16" },
+        "surface": { "light": "#FFFDF8", "dark": "#2A2620" },
+        "primary_text": { "light": "#2B2620", "dark": "#F3EADA" },
+        "secondary_text": { "light": "#5A5245", "dark": "#B7AC98" },
+        "primary": { "light": "#E8A33D", "dark": "#F0B458" },
+        "secondary": { "light": "#2F7D5B", "dark": "#4CA179" },
+        "accent": { "light": "#E4572E", "dark": "#F0703F" },
+        "border": { "light": "#E7DFD0", "dark": "#3A352C" }
+      }
+    },
+    "css_variables": {
+      "root": {
+        "--color-primary": "#E8A33D",
+        "--color-secondary": "#2F7D5B",
+        "--color-accent": "#E4572E",
+        "--color-bg": "#FBF6EC",
+        "--color-surface": "#FFFDF8",
+        "--color-surface-2": "#F1E8D6",
+        "--color-text": "#2B2620",
+        "--color-text-muted": "#5A5245",
+        "--color-border": "#E7DFD0",
+        "--color-success": "#2F7D5B",
+        "--color-warning": "#D9932B",
+        "--color-error": "#C0362C",
+        "--color-info": "#3C6E7A"
+      }
+    },
+    "tailwind_config": {
+      "colors": {
+        "saffron": { "DEFAULT": "#E8A33D", "50": "#FBF3E4", "100": "#F6E4C4", "500": "#E8A33D", "600": "#CE8A28", "700": "#A96C1A" },
+        "basil": { "DEFAULT": "#2F7D5B", "light": "#4CA179", "dark": "#1F5A40" },
+        "tomato": { "DEFAULT": "#E4572E", "light": "#F0703F", "dark": "#B23D1C" },
+        "cream": { "DEFAULT": "#FBF6EC", "ivory": "#FFFDF8", "oat": "#F1E8D6" }
+      }
+    }
+  }
+}

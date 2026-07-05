@@ -1,0 +1,73 @@
+{
+  "skill": "pattern-library",
+  "cluster": "illustration",
+  "wave": 5,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "pattern_philosophy": "Quiet, warm background texture drawn from the brand's food vocabulary — bowls, plates, spice dots, a level 'balance' line. Patterns are atmosphere, never noise; they sit at low opacity in negative space and never crowd content or numbers.",
+    "patterns": [
+      {
+        "id": "spice-dot-field",
+        "name": "Spice-dot field",
+        "description": "A sparse, irregular scatter of small dots (spice / cardamom / mustard seeds) in Oat on Cream. The signature ambient texture.",
+        "construction": "Dots 3-6px, randomised on a loose 48px grid; ~8-12% coverage; two tones of oat for subtle depth.",
+        "colors": ["#F1E8D6 on #FBF6EC", "occasional #E8A33D at 10% opacity"],
+        "usage": "Empty states, splash, email headers, section dividers. Never behind body text or macro/price figures.",
+        "density": "sparse",
+        "opacity": "6-12%"
+      },
+      {
+        "id": "bowl-tile",
+        "name": "Bowl tile",
+        "description": "A soft repeating tile of outlined bowls and plates at varied sizes, gently overlapping, all in one tone.",
+        "construction": "Line-only bowls, 2px stroke, seamless tile; large scale so individual bowls read; low contrast.",
+        "colors": ["#E7DFD0 on #FBF6EC", "reverse: #FBF6EC at 12% on #2F7D5B"],
+        "usage": "Marketing section backgrounds, app onboarding cards, the 'your month, planned' band.",
+        "density": "medium-sparse",
+        "opacity": "8-15%"
+      },
+      {
+        "id": "balance-line",
+        "name": "Balance line",
+        "description": "A single calm horizontal line motif with a soft node at centre — the 'balanced' idea as a divider or footer band.",
+        "construction": "1-2px line, centre node = small bowl or dot; used as a rule, not a fill.",
+        "colors": ["#2F7D5B", "#E7DFD0"],
+        "usage": "Section rules, footer, between plan days, email separators.",
+        "density": "line",
+        "opacity": "40-100%"
+      },
+      {
+        "id": "macro-arc-motif",
+        "name": "Macro arc motif",
+        "description": "Three nested soft arcs (protein/carb/fat) as a decorative corner or watermark for value/nutrition sections — decorative only, never a real chart.",
+        "construction": "Three concentric partial arcs; saffron/green/clove; used large and faint.",
+        "colors": ["#E8A33D", "#2F7D5B", "#5A5245"],
+        "usage": "Corner watermark on nutrition/value spots and premium-tier cards.",
+        "density": "accent",
+        "opacity": "10-20%",
+        "note": "Decorative motif only — must not be mistaken for an actual macro readout; keep abstract and faint."
+      }
+    ],
+    "application_rules": {
+      "do": [
+        "Keep patterns in negative space and at low opacity.",
+        "Use one pattern per surface; don't stack them.",
+        "Match pattern tone to the surface (oat on cream, cream on green).",
+        "Let cream and calm lead; patterns are a whisper."
+      ],
+      "dont": [
+        "Never place a pattern behind body text, macros, prices, or the ledger.",
+        "Never use a pattern loud enough to compete with food photography.",
+        "Never render the macro-arc motif as if it were real data.",
+        "No busy full-bleed maximalist patterns; Rasa is calm."
+      ]
+    },
+    "file_formats_needed": {
+      "vector": ["SVG (seamless tiles)"],
+      "raster": ["PNG @2x tiles"],
+      "variants": ["Oat-on-cream", "Cream-on-green (reverse)", "Line/divider"]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "skill": "welcome-email-sequence",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "sequence_name": "Rasa welcome / onboarding sequence",
+    "trigger": "New user signs up / completes onboarding",
+    "goal": "Get the user to a validated preference profile, an approved plan, and their first one-tap confirmed order — calmly, building trust.",
+    "voice_note": "Calm, warm, pragmatic. Sentence case. The competent friend who cooks. Every nutrition mention says 'estimate'. Never a diet scold, never a hard sell.",
+    "cadence": "Email 1 immediately; 2 at +1 day; 3 at +3 days; 4 at +6 days; 5 at +12 days.",
+    "emails": [
+      {
+        "number": 1,
+        "send": "Immediately on signup",
+        "subject": "Welcome — let's get your month sorted",
+        "preview": "Answer a few questions once, and Rasa handles the rest.",
+        "body": "Hi {{first_name}},\n\nWelcome to Rasa. You already order in most days — Rasa just makes it smart, balanced, and within budget.\n\nHere's the whole idea: you answer a few questions once — diet, goals, what you can spend, what you can't stand — and Rasa builds a 30-day plan that fits your macros and stays under your cap. Then it orders each meal a tap at a time.\n\nOne rule we'll never break: nothing is ordered or spent without your tap.\n\nWhen you're ready, set up your profile — in the app, or paste the prompt into your own ChatGPT/Claude and paste the result back. It takes about three minutes.\n\n[Set up my profile]\n\nTalk soon,\nThe Rasa team\n\nP.S. Nutrition figures in Rasa are wellness estimates, not medical claims. We keep them honest.",
+        "cta": "Set up my profile"
+      },
+      {
+        "number": 2,
+        "send": "+1 day (if profile not completed)",
+        "subject": "Three minutes now saves you fifteen every afternoon",
+        "preview": "The 4pm 'what do I eat' — gone.",
+        "body": "Hi {{first_name}},\n\nThe part that saves you the most is the smallest: telling Rasa about you, once.\n\nDiet and allergens. Your monthly budget. Your protein or calorie goal, if you have one. A couple of things you can't stand. That's it — and from then on, your routine meals are decided for you.\n\nAllergens you flag get hard-blocked before anything reaches your cart. Your budget becomes a hard cap. Your goals shape every pick.\n\n[Finish my profile]\n\nIt's the last time you'll think this hard about lunch.\n\nThe Rasa team",
+        "cta": "Finish my profile"
+      },
+      {
+        "number": 3,
+        "send": "+3 days (profile complete, plan not approved)",
+        "subject": "Your month is ready to review",
+        "preview": "30 days, planned to your macros and your cap.",
+        "body": "Hi {{first_name}},\n\nYour 30-day plan is built — meals chosen to fit your macros and stay under your budget, with variety built in so week three doesn't feel like week one.\n\nHave a look and approve it in one review. Nothing is ordered yet — approving the plan just switches on the daily 'tap to confirm' nudges. You can swap any meal in a tap.\n\n[Review my plan]\n\nEvery macro figure is an estimate, aggregated across the day. Honest, not clinical.\n\nThe Rasa team",
+        "cta": "Review my plan"
+      },
+      {
+        "number": 4,
+        "send": "+6 days (plan approved, no confirmed order yet)",
+        "subject": "Your next meal is one tap away",
+        "preview": "We'll show you the dish, the price and the time. You just tap yes.",
+        "body": "Hi {{first_name}},\n\nHere's how a normal day feels now: around mealtime, Rasa checks the restaurant, the price and whether it still fits — then nudges you.\n\n'Grilled chicken bowl, ₹240, arrives ~12:35 — confirm?'\n\nYou tap yes. Five seconds. It arrives. That's the whole thing.\n\nIf the price moved past your cap or the kitchen's closed, Rasa offers a fallback instead of ordering anyway. You're always the one who taps.\n\n[Open Rasa]\n\nThe Rasa team",
+        "cta": "Open Rasa"
+      },
+      {
+        "number": 5,
+        "send": "+12 days",
+        "subject": "It gets better the more you use it",
+        "preview": "Rate a meal, and the plan learns your taste.",
+        "body": "Hi {{first_name}},\n\nA quick thing worth doing: after a meal, tap the rating. Every rating teaches Rasa a little more — better picks, less repetition, closer to what you actually like.\n\nAnd whenever you want, check your ledger. Planned vs actual, this meal, this day, this month — so the number you set at the start is the number you end on.\n\nThat's the deal we're keeping: your meals handled, your macros roughly on track, your spend under the cap — and you always tapping yes.\n\n[See my ledger]\n\nThanks for being here early.\nThe Rasa team",
+        "cta": "See my ledger"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "skill": "logo-concept",
+  "cluster": "identity",
+  "wave": 3,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "tagline": "Taste, balanced.",
+    "logo_architecture": "wordmark_with_monogram",
+    "naming_rationale": "Rasa is Sanskrit for taste and essence — and the Ayurvedic model of a balanced meal (the six rasas held in balance). The mark should feel warm, appetising and calm, and quietly carry that idea of balance without being literal or spiritual-kitsch.",
+    "concepts": [
+      {
+        "id": "concept_01",
+        "name": "The bowl-R",
+        "description": "A friendly, warm-humanist wordmark 'rasa' in sentence case (lowercase). The 'R' is drawn so its bowl reads as a rounded serving bowl — the counter of the R opens slightly and its base curve is a shade fuller, like a bowl seen from the front. A single small dot rests inside the bowl (a spice dot / a served meal / the 'tap' target). Balanced, appetising, unmistakably about food and about calm.",
+        "monogram": {
+          "form": "The 'R' as a bowl with one spice dot resting in it.",
+          "meaning": "A served, balanced meal; the one-tap dot; the essence (rasa) held in a bowl.",
+          "construction": "Built on an 8px grid; bowl curve radius = 1.5x stroke; the dot sits on the optical baseline of the bowl, diameter = 1x stroke."
+        },
+        "wordmark": {
+          "typeface_style": "Custom-tuned General Sans, medium-to-semibold, all lowercase.",
+          "weight": "600",
+          "letter_spacing": "-0.01em, gently tight",
+          "special_treatment": "The 'a's carry a soft double-storey warmth; the 'R' bowl is the signature."
+        },
+        "rationale": "Says 'balanced meal' and 'tap to confirm' in one soft mark, works down to a favicon as the bowl-R alone, and never reads as a diet or fitness logo.",
+        "recommended": true
+      },
+      {
+        "id": "concept_02",
+        "name": "The rasa drop",
+        "description": "Wordmark 'rasa' beside a single teardrop/dollop mark — a warm saffron drop with a small green leaf notch, reading as a drop of essence and a hint of fresh herb. Speaks to 'taste' (a drop of flavour) and 'balanced' (warm + green in one shape).",
+        "monogram": {
+          "form": "Saffron teardrop with a basil-green leaf notch at the top.",
+          "meaning": "A drop of taste/essence; warmth balanced by green.",
+          "construction": "Golden-ratio teardrop; leaf notch cut at 30 degrees; two-colour or single-colour."
+        },
+        "wordmark": {
+          "typeface_style": "General Sans, lowercase, semibold.",
+          "weight": "600",
+          "letter_spacing": "-0.005em",
+          "special_treatment": "Wordmark sits optically centred to the drop."
+        },
+        "rationale": "More abstract and scalable, but slightly less food-specific than the bowl-R."
+      },
+      {
+        "id": "concept_03",
+        "name": "The balance bowl",
+        "description": "A minimal circular bowl mark whose rim is a single stroke and whose contents are two soft arcs — one saffron, one green — meeting level, like a balance held. Wordmark 'rasa' below or beside. The most literal 'balanced' expression.",
+        "monogram": {
+          "form": "Circle bowl with two level arcs (saffron over green) inside.",
+          "meaning": "Balance of taste and health, held steady.",
+          "construction": "Perfect circle; internal arcs meet on the horizontal centre line; equal visual weight."
+        },
+        "wordmark": {
+          "typeface_style": "General Sans, lowercase, medium.",
+          "weight": "500",
+          "letter_spacing": "0",
+          "special_treatment": "Quiet, so the bowl leads."
+        },
+        "rationale": "Clear metaphor and a strong app-icon, but risks feeling a touch clinical/infographic versus the warmer bowl-R."
+      }
+    ],
+    "lockups": {
+      "primary": { "arrangement": "Monogram left, wordmark right (horizontal)", "spacing": "Monogram width x 0.4 between elements", "use_case": "App header, nav, marketing lockup." },
+      "stacked": { "arrangement": "Monogram above, wordmark below", "spacing": "Monogram height x 0.25", "use_case": "Splash screen, app store, social avatar." },
+      "wordmark_only": { "arrangement": "Wordmark 'rasa' alone", "use_case": "Footers, dense contexts, established recognition." },
+      "monogram_only": { "arrangement": "Bowl-R alone", "use_case": "Favicon, app icon, push-notification avatar, watermark." }
+    },
+    "clear_space": { "minimum": "Height of the 'r' in the wordmark on all sides", "formula": "0.5x lockup height as minimum padding." },
+    "minimum_sizes": {
+      "digital_full_logo": "104px width",
+      "digital_monogram_only": "24px",
+      "print_full_logo": "22mm width",
+      "print_monogram_only": "7mm"
+    },
+    "color_applications": {
+      "primary": { "monogram": "#E8A33D", "monogram_dot": "#2F7D5B", "wordmark": "#2B2620", "background": "#FBF6EC" },
+      "reversed": { "monogram": "#E8A33D", "wordmark": "#FBF6EC", "background": "#2F7D5B" },
+      "monochrome_dark": { "full_logo": "#2B2620", "background": "#FBF6EC" },
+      "monochrome_light": { "full_logo": "#FBF6EC", "background": "#2F7D5B" },
+      "app_icon": { "mark": "#E8A33D bowl-R on #2F7D5B", "notes": "Cream-on-green or saffron-on-green; rounded-square iOS/Android mask." }
+    },
+    "usage_rules": {
+      "do": [
+        "Use approved colour combinations only.",
+        "Maintain clear space equal to the 'r' height.",
+        "Use vector formats (SVG/PDF) for print, transparent PNG for digital.",
+        "Scale proportionally.",
+        "Place on cream, green, or a photo only with a soft scrim behind the mark.",
+        "Keep the wordmark lowercase (sentence-case brand)."
+      ],
+      "dont": [
+        "Never stretch, skew or rotate the mark.",
+        "Never add a drop shadow, glow or bevel.",
+        "Never recolour the mark outside the palette.",
+        "Never place the warm mark on a busy food photo without a scrim.",
+        "Never capitalise the wordmark as 'RASA' or 'Rasa' in the logo (brand copy may capitalise the sentence-initial 'Rasa', but the mark stays lowercase).",
+        "Never swap the confirm-tomato into the logo — the logo is saffron/green, tomato is for the action button only.",
+        "Never outline or stroke the wordmark."
+      ]
+    },
+    "file_formats_needed": {
+      "vector": ["SVG", "PDF"],
+      "raster": ["PNG (transparent)", "PNG (cream bg)", "JPG"],
+      "variants": ["Primary", "Reversed", "Monochrome dark", "Monochrome light", "App icon"],
+      "sizes": ["@1x", "@2x", "@3x", "favicon 32/48", "app icon 512/1024"]
+    }
+  }
+}

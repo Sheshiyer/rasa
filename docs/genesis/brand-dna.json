@@ -1,0 +1,103 @@
+{
+  "brand_system": {
+    "brand_id": "rasa",
+    "brand_name": "Rasa",
+    "category": "AI meal planner + auto-ordering for delivery (health-tech / food-tech consumer app)",
+    "audience": "Metro IT / tech professionals, 26-35, in Bengaluru / Hyderabad / Pune / Gurgaon who already order delivery 12-25x/month and pay for Swiggy One plus a health app (\"Deadline Deepak\"); fitness / macro-tracking users (\"Macro Meera\") next.",
+    "positioning": "Rasa plans your month of meals to your macros and budget, and orders them a tap at a time. Convenience gets you in the door; macro adherence and a hard spend cap are what make Rasa worth paying for.",
+    "promise": "A month of meals, planned to your macros and budget, ordered with one tap — always inside your calorie target and your monthly cap, never behind your back.",
+    "differentiators": [
+      "Plans a full 30 days ahead, not one order at a time.",
+      "Hits estimated calorie and macro targets aggregated across the day.",
+      "Enforces a hard monthly budget cap with per-meal envelopes and coupon optimization.",
+      "Cross-platform by design (Swiggy now; Zomato, Instamart, tiffin next) — the neutral orchestration seam the platforms structurally cannot build.",
+      "A portable preference-and-macro graph that gets smarter every meal, so leaving means starting over."
+    ],
+    "voice_principles": [
+      "calm",
+      "warm",
+      "pragmatic",
+      "precise",
+      "unobtrusive",
+      "quietly witty",
+      "The competent friend who cooks — never a diet coach yelling macros.",
+      "Health framed as everyday balance; wellness estimates only, no medical or disease claims (FSSAI-safe).",
+      "Never a convenience-fee framing; always health/wellness value."
+    ]
+  },
+  "copy_system": {
+    "copy_slots": {
+      "hero_headline": "Taste, balanced.",
+      "hero_subhead": "A month of meals, planned to your macros and budget, ordered with one tap.",
+      "cta_primary": "Plan my month",
+      "cta_secondary": "See how it works",
+      "proof_points": [
+        "Plans 30 days ahead, so you stop choosing daily.",
+        "Every meal fits your protein and calorie targets — estimated for you.",
+        "Eat out daily and still end the month under the number you set.",
+        "One-tap confirm before every order — smart, never behind your back.",
+        "Allergens are hard-blocked before anything reaches your cart."
+      ],
+      "offer_text": "Answer a few questions once. Rasa builds a 30-day plan to your macros and budget and quietly gets each meal to your door through Swiggy — you just tap yes."
+    },
+    "tone_notes": {
+      "channel_calibration": {
+        "website_hero": "Warm, calm, and confident. Lead with relief and balance, not features. Short lines; 'Sorted your lunch, tap to confirm' energy. Never a diet-coach or convenience-fee pitch.",
+        "app_ui": "Quiet, precise, unobtrusive. Terse action copy ('tap to confirm', 'stayed under cap', 'swap it'). Numbers align and read at a glance; every macro figure labeled 'estimated'.",
+        "email": "Pragmatic and caring, like a friend checking in. Recap the plan and the spend clearly; no guilt, no urgency-baiting. Honest 'estimated' framing on all nutrition figures.",
+        "ads": "Hook on the named pain ('No 4pm what-do-I-eat') then the balance-and-budget payoff. Health/wellness value, never a convenience surcharge; no medical claims."
+      }
+    }
+  },
+  "visual_system": {
+    "palette": {
+      "primary": { "hex": "#E8A33D", "name": "Turmeric Saffron" },
+      "secondary": { "hex": "#2F7D5B", "name": "Fresh Basil Green" },
+      "accent": { "hex": "#E4572E", "name": "Ripe Tomato" }
+    },
+    "typography": {
+      "typefaces": {
+        "display": { "name": "General Sans / Satoshi (warm humanist sans, medium weight)" },
+        "body": { "name": "Inter (highly legible neutral sans for menus, macros and numbers at small sizes)" },
+        "data": { "name": "Tabular-figure sans or mono (aligned figures for calories, macros, prices and the spend ledger)" }
+      }
+    },
+    "imagery_direction": {
+      "photography": "Real, warm, top-down and close-up food on cream or wood; natural light, honest portions, no glossy fast-food gloss or artificial garnish.",
+      "illustration": "Simple line-and-fill food and bowl motifs in the palette; friendly, geometric, never cartoonish.",
+      "environments": "Everyday Indian home and desk contexts — a meal arriving between meetings — not aspirational studio kitchens."
+    },
+    "logo_usage": {
+      "do": [
+        "Place top-left in app and marketing; center on splash and the plan-approval hero.",
+        "Keep minimum clear space equal to the height of the 'R' on all sides.",
+        "Use the approved variations: full wordmark 'Rasa', the 'R' bowl monogram, or monochrome cream-on-green.",
+        "Add a scrim before placing the warm mark on any food photo."
+      ],
+      "dont": [
+        "Never stretch or distort the mark.",
+        "Never add a drop shadow.",
+        "Never place the warm mark on a busy food photo without a scrim."
+      ]
+    },
+    "composition_motifs": [
+      "Soft rounded rectangles and full circles echoing plates, bowls and the 'tap' target; generous corner radii.",
+      "Matte, flat surfaces on warm cream backgrounds; subtle paper-grain at most.",
+      "A light repeating motif of bowls / spice dots as a quiet background texture, never over content."
+    ],
+    "anti_patterns": [
+      "Clinical, diet-app coldness or medical/laboratory framing.",
+      "Gradients, gloss, or glossy fast-food-style food photography.",
+      "Artificial garnish or unrealistic 'perfect' portions.",
+      "Background pattern or texture placed over content.",
+      "Convenience-fee / discount-shouting visual language."
+    ],
+    "asset_manifest": {
+      "validation": {
+        "all_paths_exist": false,
+        "note": "Visual assets (photography, illustration, icons, patterns, logo files) are deferred — waves 4-7 of the brandmint pipeline require image-gen infra and have not been generated. Only the 7-output strategic brand-DNA core and config exist so far."
+      },
+      "paths": []
+    }
+  }
+}

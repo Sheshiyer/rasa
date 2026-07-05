@@ -1,0 +1,54 @@
+{
+  "skill": "brand-illustrations",
+  "cluster": "illustration",
+  "wave": 5,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "illustration_philosophy": "Simple line-and-fill food and bowl motifs in the Rasa palette — friendly, geometric, warm, never cartoonish. Illustration carries the calm and the everyday-Indian-food feeling where photography can't (empty states, onboarding, emails, spot art). It should feel drawn by a competent, warm hand, not a mascot factory.",
+    "style": {
+      "construction": "Rounded line-and-fill; consistent 2.5px stroke on a 24px grid; soft corners; flat matte fills, no gradients.",
+      "geometry": "Bowls, plates, spice dots, a level 'balance' line, simple dishes (roti, bowl of dal, chicken bowl, thali).",
+      "color": "Saffron and green fills on cream; charred-cardamom line; tomato reserved for the tap/confirm dot only.",
+      "line_and_fill": "Outline with a single flat accent fill; two colours max per spot illustration plus the line.",
+      "tone": "Warm, calm, a little witty — a bowl with a tiny 'zzz' at midnight, a plate exhaling. Never a diet-scold or a hype-mascot."
+    },
+    "no_mascot_rule": "Rasa has no anthropomorphic mascot. If a 'friend who cooks' presence is needed, imply it through hands and warmth, not a character.",
+    "illustration_sets": [
+      { "set": "onboarding", "purpose": "Warm the copy-paste onboarding and first-run.", "spots": [
+        { "name": "answer-once", "description": "A speech bubble and a bowl — 'answer a few questions once.'" },
+        { "name": "plan-built", "description": "A calm calendar-grid of small bowls — 'your month, planned.'" },
+        { "name": "one-tap", "description": "A finger dot pressing a bowl with a tomato tap-ripple — 'you always tap yes.'" }
+      ]},
+      { "set": "empty_states", "purpose": "Calm, non-blaming empty and waiting states.", "spots": [
+        { "name": "no-plan-yet", "description": "An empty plate outline with a soft spice dot — 'nothing planned yet.'" },
+        { "name": "kitchen-closed", "description": "A bowl with a small 'zzz' — 'this restaurant is closed; we'll pick a fallback.'" },
+        { "name": "all-caught-up", "description": "A level balance-line over a bowl — 'you're all set for today.'" }
+      ]},
+      { "set": "value_spots", "purpose": "Illustrate the three pillars in marketing and emails.", "spots": [
+        { "name": "macros-balanced", "description": "A bowl with three soft arcs (P/C/F) held level — balance, estimated." },
+        { "name": "under-cap", "description": "A wallet-bowl with a green level line under a marked cap." },
+        { "name": "one-tap-safe", "description": "A shield-bowl with a small check and a tomato tap dot — 'nothing spent silently.'" }
+      ]},
+      { "set": "email_and_social", "purpose": "Header spot art and shareable moments.", "spots": [
+        { "name": "welcome-bowl", "description": "A warm saffron bowl with a leaf notch — welcome/header art." },
+        { "name": "shareable-prompt", "description": "A chat bubble spilling into a bowl — the copy-paste onboarding prompt as a shareable object." }
+      ]}
+    ],
+    "usage_guidelines": {
+      "do": [
+        "Keep two accent colours max plus the line.",
+        "Reuse the bowl/plate/spice-dot vocabulary consistently.",
+        "Use tomato only for a tap/confirm dot.",
+        "Keep it warm and calm; a light wit is welcome."
+      ],
+      "dont": [
+        "No mascot or anthropomorphic food characters.",
+        "No gradients, gloss, or 3D.",
+        "No diet-scold imagery (scales, tapes, guilt).",
+        "No medical or 'doctor' symbols; nutrition is wellness, not medicine."
+      ]
+    }
+  }
+}

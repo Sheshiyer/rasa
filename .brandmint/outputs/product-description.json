@@ -1,0 +1,38 @@
+{
+  "skill": "product-description",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "tagline": "Taste, balanced.",
+    "one_liner": "A month of meals, planned to your macros and budget, ordered with one tap.",
+    "short_descriptions": {
+      "app_store_short": "Plan a month of meals to your macros and budget. Rasa orders each meal via Swiggy — one tap at a time. Nothing spent silently. Nutrition figures are estimates.",
+      "one_sentence": "Rasa plans a month of meals around your macros and your budget, then orders them for you a tap at a time.",
+      "tweet_length": "You already order in every day. Rasa plans your month to your macros and your budget, and orders it one tap at a time. No 4pm 'what do I eat.' No blown budget. You always tap yes."
+    },
+    "long_description": "You already order food delivery most days. Rasa just makes it smart, balanced, and within budget.\n\nAnswer a few questions once — your diet, allergens, goals, what you can spend, and what you can't stand — and Rasa builds a 30-day plan that fits your macros and stays under a hard monthly cap. Then, at each mealtime, it checks the restaurant, the price and the fit, and nudges you: 'Grilled chicken bowl, ₹240, arrives ~12:35 — confirm?' You tap yes. It arrives. That's the whole thing.\n\nNo daily 15-minute scroll. No 4pm decision drain. No delivery bill you can't account for. No diet that collapses by Wednesday because you couldn't see a dish's macros.\n\nRasa is built on a few firm promises. Nothing is ordered or spent without your one-tap confirm. Allergens you flag are hard-blocked before anything reaches your cart. A visible ledger shows planned versus actual spend against your cap. And every nutrition figure is a clearly labelled estimate — grounded in an India-native food database, targeted across the whole day. Rasa is about everyday balance, not medical claims.\n\nAt launch, Rasa orders through Swiggy, with Zomato, Instamart and tiffin planned next — one plan, one budget, across every food source. It's a health-framed subscription, not a fee on your food: you pay for the planning, the macros and the budget guardrail, from ₹149/month.\n\nThink of Rasa as the competent friend who cooks — the one who texts 'sorted your lunch, tap to confirm.' Not a diet coach yelling macros. Just your meals handled, your numbers roughly on track, your spend under control, and you always holding the tap.",
+    "feature_benefit_table": [
+      { "feature": "30-day meal plan", "benefit": "Your routine meals decided once, so you stop choosing every day.", "guardrail": null },
+      { "feature": "Macro-aware ordering", "benefit": "Food that fits your protein and calorie targets, estimated across the day.", "guardrail": "Figures labelled as estimates; no medical claims (FSSAI-safe)." },
+      { "feature": "Hard budget cap + coupons", "benefit": "Eat out daily and still end the month under the number you set.", "guardrail": "Framed as health/budget guardrail, never a convenience fee." },
+      { "feature": "One-tap confirm per order", "benefit": "A 5-second yes before each order — smart, but never behind your back.", "guardrail": "No silent ordering or spending, ever." },
+      { "feature": "Allergen hard-block", "benefit": "Flagged allergens are blocked before they can reach your cart.", "guardrail": "Blocked first, not filtered later." },
+      { "feature": "Visible spend ledger", "benefit": "See planned vs actual spend, per meal, day and month.", "guardrail": "Transparency by default." },
+      { "feature": "Variety + learning", "benefit": "Anti-repetition plus ratings that teach Rasa your taste over time.", "guardrail": "Swap any meal in a tap." },
+      { "feature": "Copy-paste onboarding prompt", "benefit": "Set up in your own ChatGPT/Claude and paste the result in — zero-friction, shareable.", "guardrail": "Collects goals with no medical claims." },
+      { "feature": "Cross-platform (planned)", "benefit": "One budget and plan across Swiggy, Zomato, Instamart and tiffin.", "guardrail": "Swiggy-only at launch; expands behind one adapter." }
+    ],
+    "who_its_for": [
+      "Metro tech professionals (26-35) who order in 12-25 times a month and are tired of thinking about it.",
+      "Macro-trackers whose meal prep collapses midweek and who want restaurant food that fits their numbers."
+    ],
+    "who_its_not_for": [
+      "People wanting fully autonomous ordering with no confirmation (Rasa always asks).",
+      "Anyone seeking medical or therapeutic dietary claims (Rasa provides wellness estimates only)."
+    ],
+    "compliance_note": "Nutrition figures shown in Rasa are wellness estimates, not medical advice, diagnosis, or treatment. Allergen handling depends in part on restaurant-provided data; Rasa surfaces flags clearly and blocks flagged allergens before checkout."
+  }
+}

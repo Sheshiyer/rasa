@@ -1,0 +1,57 @@
+{
+  "skill": "brand-synthesis",
+  "cluster": "synthesis",
+  "wave": 7,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "tagline": "Taste, balanced.",
+    "one_liner": "A month of meals, planned to your macros and budget, ordered with one tap.",
+    "essence": "The competent friend who cooks — quietly plans your month, keeps you balanced and within budget, and hands you a 5-second tap. Effortless, not passive; warm, not clinical; smart, never silent.",
+    "brand_promise": "Give people back the daily hour and headspace that food decisions quietly steal — with meals that stay balanced and within budget, and a plan you always control.",
+    "positioning_statement": "For metro Indians who already order in every day, Rasa is the AI meal planner that decides a month of meals to your macros and your budget and orders them one tap at a time — because trackers only tell you what you ate, and delivery apps only sell you convenience.",
+    "archetypes": ["Caregiver", "Sage"],
+    "value_logic": "Convenience is the hook that gets people in the door; macro adherence is the paid value; a hard budget cap is the guardrail; neutral cross-platform orchestration is the moat (v2).",
+    "personality_traits": ["effortless", "balanced", "warm", "precise", "unobtrusive", "quietly witty"],
+    "voice_in_one_line": "Calm, warm, pragmatic and precise — sentence case, concrete, never a diet scold. 'Sorted your lunch, tap to confirm.'",
+    "pillars": [
+      { "name": "Convenience (the hook)", "expression": "No 4pm 'what do I eat'; your routine meals are already chosen." },
+      { "name": "Macros (the value)", "expression": "Food that fits your protein and calorie targets — estimated, honest, daily-aggregated." },
+      { "name": "Budget (the guardrail)", "expression": "A hard monthly cap with per-meal envelopes and coupons; eat out daily, stay under your number." },
+      { "name": "Control (the trust)", "expression": "One tap per order, allergens hard-blocked, a visible ledger; nothing spent silently." }
+    ],
+    "visual_essence": {
+      "palette": { "primary": "Turmeric Saffron #E8A33D", "secondary": "Fresh Basil Green #2F7D5B", "accent": "Ripe Tomato #E4572E (confirm only)", "background": "Warm cream #FBF6EC" },
+      "type": "General Sans / Satoshi for headers, Inter for body, tabular figures for macros and prices.",
+      "feel": "Spice-warm, appetising, calm; real top-down food on cream; soft rounded plate/bowl shapes; matte flat surfaces."
+    },
+    "elevator_pitch": "You already order in every day — and lose 15 minutes, a chunk of money you can't account for, and your diet by Wednesday. Rasa fixes all three at once. Answer a few questions once, and it plans a month of meals to your macros and your budget, then orders each one via Swiggy after a single tap from you. Smart, balanced, within budget — and never behind your back.",
+    "do": [
+      "Frame everything as health/wellness and everyday balance.",
+      "Lead with convenience, sell on macros and budget.",
+      "Label every nutrition figure as an estimate.",
+      "Honour one-tap: nothing ordered or spent silently.",
+      "Sound like a competent, warm friend — calm, concrete, sentence case.",
+      "Keep the visuals cream-warm, honest and calm; reserve tomato for the confirm."
+    ],
+    "dont": [
+      "Never use convenience-fee framing or add a surcharge to food.",
+      "Never make medical, disease, or 'doctor-approved' claims (FSSAI-safe).",
+      "Never imply silent auto-ordering or auto-spend.",
+      "Never scold about calories or shame food choices.",
+      "Never overstate macro precision; it's estimated and daily-aggregated.",
+      "Never gamify spending or celebrate ordering with hype."
+    ],
+    "tagline_options": [
+      "Taste, balanced.",
+      "Sorted. Tap to confirm.",
+      "Your month, planned.",
+      "Eat well, on autopilot — with one tap.",
+      "One less decision, every day.",
+      "Balanced meals, budget held, one tap."
+    ],
+    "north_star": "Weekly retained plans that auto-fill plus at least one confirmed order a day — proof that Rasa has quietly become the way someone eats.",
+    "compliance_guardrails": "Health/wellness framing only; nutrition figures are wellness estimates, never medical claims; allergens hard-blocked; one-tap confirm on every order; visible spend ledger; no convenience surcharge."
+  }
+}

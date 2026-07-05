@@ -1,0 +1,88 @@
+{
+  "skill": "icon-system",
+  "cluster": "illustration",
+  "wave": 5,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "icon_specifications": {
+      "grid": "24x24px base grid",
+      "stroke_weight": "2px consistent stroke, rounded caps and joins",
+      "corner_radius": "2px rounded corners; bowls/plates fully rounded",
+      "style": "Rounded outline icons with occasional single filled accent (saffron or green); warm, friendly, geometric.",
+      "optical_alignment": "Visually centred, not mathematically centred.",
+      "export_sizes": ["16x16", "20x20", "24x24", "32x32", "48x48"],
+      "formats": ["SVG (primary)", "PNG (fallback)", "Icon font"]
+    },
+    "color_usage": {
+      "default": "#2B2620 (charred cardamom)",
+      "muted": "#5A5245 (clove)",
+      "brand_accent": "#2F7D5B (basil green) for positive/balance states",
+      "confirm": "#E4572E (ripe tomato) for the one-tap confirm action only",
+      "alert": "#C0362C (allergen red) for hard-block/error only",
+      "disabled": "#8A8072 (ash)",
+      "on_dark": "#F3EADA"
+    },
+    "icon_sets": {
+      "navigation": [
+        { "name": "plan", "description": "A calendar-grid of small bowls. The 30-day plan home.", "metaphor": "Month grid + bowl", "placeholder_path": "./assets/icons/nav-plan.svg" },
+        { "name": "today", "description": "A single bowl with a sun/clock hint. Today's meals.", "metaphor": "Bowl + time", "placeholder_path": "./assets/icons/nav-today.svg" },
+        { "name": "ledger", "description": "A wallet with a level line. The spend ledger.", "metaphor": "Wallet + budget line", "placeholder_path": "./assets/icons/nav-ledger.svg" },
+        { "name": "profile", "description": "A person with a small leaf. Preferences and profile.", "metaphor": "User + preference leaf", "placeholder_path": "./assets/icons/nav-profile.svg" },
+        { "name": "menu", "description": "Three rounded horizontal strokes. Mobile navigation.", "metaphor": "Hamburger", "placeholder_path": "./assets/icons/nav-menu.svg" }
+      ],
+      "meal_slots": [
+        { "name": "breakfast", "description": "A cup with steam and a sunrise arc.", "metaphor": "Morning cup", "placeholder_path": "./assets/icons/slot-breakfast.svg" },
+        { "name": "lunch", "description": "A bowl with a sun overhead.", "metaphor": "Midday bowl", "placeholder_path": "./assets/icons/slot-lunch.svg" },
+        { "name": "dinner", "description": "A plate with a moon.", "metaphor": "Evening plate", "placeholder_path": "./assets/icons/slot-dinner.svg" },
+        { "name": "snack", "description": "A small bowl / half portion.", "metaphor": "Small bowl", "placeholder_path": "./assets/icons/slot-snack.svg" }
+      ],
+      "macros_and_nutrition": [
+        { "name": "calories", "description": "A soft flame in a rounded outline. Estimated calories.", "metaphor": "Gentle flame", "placeholder_path": "./assets/icons/macro-calories.svg" },
+        { "name": "protein", "description": "A rounded 'P' chip / muscle-arc mark.", "metaphor": "Protein chip", "placeholder_path": "./assets/icons/macro-protein.svg" },
+        { "name": "carbs", "description": "A grain / rice-cluster mark.", "metaphor": "Grain", "placeholder_path": "./assets/icons/macro-carbs.svg" },
+        { "name": "fat", "description": "A droplet mark.", "metaphor": "Drop", "placeholder_path": "./assets/icons/macro-fat.svg" },
+        { "name": "estimate", "description": "A '~' inside a soft circle. Marks every nutrition figure as an estimate.", "metaphor": "Tilde in circle", "placeholder_path": "./assets/icons/macro-estimate.svg", "priority": "compliance" },
+        { "name": "macro-balanced", "description": "Three level arcs in a bowl. Macro-fit / balanced.", "metaphor": "Balanced arcs", "placeholder_path": "./assets/icons/macro-balanced.svg" }
+      ],
+      "budget": [
+        { "name": "budget-cap", "description": "A rupee inside a rounded cap/ceiling line. The hard monthly cap.", "metaphor": "₹ under a cap line", "placeholder_path": "./assets/icons/budget-cap.svg", "priority": "hero" },
+        { "name": "under-cap", "description": "A rupee with a green level line below the cap. Stayed under budget.", "metaphor": "₹ under line, green", "placeholder_path": "./assets/icons/budget-under.svg" },
+        { "name": "coupon", "description": "A tag with a small cut/percentage. Applied offer.", "metaphor": "Price tag", "placeholder_path": "./assets/icons/budget-coupon.svg" },
+        { "name": "price-alert", "description": "A rupee with a small up-arrow in amber. Price nudged up.", "metaphor": "₹ + up arrow", "placeholder_path": "./assets/icons/budget-price-alert.svg" },
+        { "name": "spend-bar", "description": "A horizontal progress bar with a cap marker. The ledger meter.", "metaphor": "Progress toward cap", "placeholder_path": "./assets/icons/budget-spend-bar.svg" }
+      ],
+      "actions": [
+        { "name": "confirm", "description": "A bowl/plate with a check, drawn in tomato. THE one-tap confirm action.", "metaphor": "Tap + check", "placeholder_path": "./assets/icons/action-confirm.svg", "priority": "hero", "color": "#E4572E" },
+        { "name": "swap", "description": "Two curved arrows around a bowl. Swap this meal for a fallback.", "metaphor": "Swap arrows", "placeholder_path": "./assets/icons/action-swap.svg" },
+        { "name": "skip", "description": "A bowl with a forward-skip arrow. Skip this slot.", "metaphor": "Skip forward", "placeholder_path": "./assets/icons/action-skip.svg" },
+        { "name": "rate", "description": "A thumbs / star for post-meal rating that teaches preferences.", "metaphor": "Rating", "placeholder_path": "./assets/icons/action-rate.svg" },
+        { "name": "edit-plan", "description": "A pencil over the plan grid. Adjust preferences/plan.", "metaphor": "Pencil + grid", "placeholder_path": "./assets/icons/action-edit.svg" },
+        { "name": "paste-profile", "description": "A clipboard/chat-bubble into a bowl. Paste the onboarding-prompt JSON.", "metaphor": "Paste profile", "placeholder_path": "./assets/icons/action-paste.svg" }
+      ],
+      "safety_and_status": [
+        { "name": "allergen-block", "description": "An allergen (peanut/shellfish) inside a red no-entry ring. HARD block — deliberately distinct from confirm.", "metaphor": "Blocked allergen", "placeholder_path": "./assets/icons/safety-allergen.svg", "priority": "compliance", "color": "#C0362C" },
+        { "name": "veg", "description": "The Indian green-square veg mark.", "metaphor": "FSSAI veg symbol", "placeholder_path": "./assets/icons/safety-veg.svg" },
+        { "name": "non-veg", "description": "The Indian brown/red non-veg mark.", "metaphor": "FSSAI non-veg symbol", "placeholder_path": "./assets/icons/safety-nonveg.svg" },
+        { "name": "jain", "description": "A leaf mark for Jain diet filter.", "metaphor": "Leaf", "placeholder_path": "./assets/icons/safety-jain.svg" },
+        { "name": "order-confirmed", "description": "A bowl with a green check. Order placed after your tap.", "metaphor": "Confirmed", "placeholder_path": "./assets/icons/status-confirmed.svg" },
+        { "name": "on-the-way", "description": "A scooter with a bowl. Tracking a live order.", "metaphor": "Delivery in transit", "placeholder_path": "./assets/icons/status-otw.svg" },
+        { "name": "error", "description": "A bowl with an exclamation in allergen-red. Order failed / needs attention.", "metaphor": "Alert bowl", "placeholder_path": "./assets/icons/status-error.svg", "color": "#C0362C" },
+        { "name": "info-estimate", "description": "An 'i' in a soft slate circle. Opens the estimate/FSSAI disclaimer.", "metaphor": "Info", "placeholder_path": "./assets/icons/status-info.svg" }
+      ]
+    },
+    "usage_guidelines": {
+      "minimum_size": "16px (below this, icons lose clarity)",
+      "touch_target": "44x44px minimum for interactive icons",
+      "spacing": "8px minimum padding; 4px gap between icon and label",
+      "animation": "Subtle 150ms ease transitions on state change; no bounce.",
+      "color_discipline": [
+        "Tomato is reserved for the confirm action icon only.",
+        "Allergen red is reserved for hard-block/error only and must look distinct from confirm tomato.",
+        "Every calorie/macro icon appears with the 'estimate' tilde treatment nearby.",
+        "Never signal meaning by colour alone; always pair with shape and label."
+      ]
+    }
+  }
+}

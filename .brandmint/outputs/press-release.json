@@ -1,0 +1,40 @@
+{
+  "skill": "press-release",
+  "cluster": "content",
+  "wave": 6,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "voice_note": "Factual, measured, no hype, no medical claims, no unverifiable superlatives. Sentence case in body copy; standard release conventions.",
+    "headline": "Rasa launches an AI meal planner that plans a month of delivery to your macros and budget, ordered one tap at a time",
+    "subhead": "The India-first app plans a 30-day meal schedule around a user's dietary goals and a hard monthly budget, then places each order through Swiggy only after a one-tap confirmation — no silent auto-ordering.",
+    "dateline": "BENGALURU, India — {{launch_date}}",
+    "body": [
+      "Rasa, a new India-based food-tech app, today opened early access to a service that plans a full month of meals around a user's estimated macro targets and a set monthly budget, then orders each meal from delivery platforms after an explicit one-tap confirmation.",
+      "The app is built for people who already order food delivery frequently. After a short one-time preference interview — covering diet type, allergens, budget, goals and dislikes — Rasa generates a 30-day plan that aims to meet the user's calorie and macro targets while staying within a hard monthly spending cap. At each mealtime, the app re-checks availability and price, applies any coupons, and prompts the user to confirm before placing the order.",
+      "Rasa does not order or spend anything without the user's confirmation. Allergens flagged by the user are blocked before an item can be added to a cart, and a visible ledger tracks planned versus actual spending against the user's cap.",
+      "Nutrition information in the app is presented as an estimate. Rasa grounds dish estimates in an India-native food database and targets macros across the full day rather than claiming per-dish precision. The company states that the figures are wellness estimates and are not medical advice or diagnostic claims.",
+      "At launch, Rasa places orders through Swiggy. The company says support for additional food sources — including other delivery platforms and tiffin services — is planned, with the goal of managing a single plan and budget across multiple sources over time.",
+      "Rasa is offered as a subscription positioned around planning and budgeting rather than as a per-order fee, with a core tier priced from ₹149 to ₹299 per month and higher tiers planned for later. The company says it does not add a surcharge to the price of a user's food.",
+      "Early access is available now via the Rasa waitlist."
+    ],
+    "quotes": [
+      {
+        "attribution": "Rasa spokesperson",
+        "quote": "Most people who order in every day aren't looking for another app to manage — they want one less decision and a bill they can predict. Rasa plans the month and does the legwork, but the person always taps to confirm. Smart, never silent."
+      },
+      {
+        "attribution": "Rasa spokesperson",
+        "quote": "We are careful to call nutrition figures what they are: estimates. The value is everyday balance and a budget that holds, not a medical promise."
+      }
+    ],
+    "boilerplate": "About Rasa: Rasa is an India-based food-technology app that plans a month of meals around a user's estimated macro targets and monthly budget and helps them order those meals from delivery platforms, one tap at a time. Rasa is built on the principles of one-tap confirmation, allergen hard-blocking, a visible spend ledger, and clearly labelled nutrition estimates. The name 'Rasa' refers to the Sanskrit idea of taste and balance. Learn more at {{website}}.",
+    "media_contact": {
+      "name": "{{media_contact_name}}",
+      "email": "{{media_contact_email}}",
+      "organization": "Rasa"
+    },
+    "disclaimers": "Nutrition figures referenced are wellness estimates and not medical advice, diagnosis, or treatment. Market and pricing details are subject to change. Platform availability may vary by city."
+  }
+}

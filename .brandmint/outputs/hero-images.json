@@ -1,0 +1,55 @@
+{
+  "skill": "hero-images",
+  "cluster": "photography",
+  "wave": 4,
+  "status": "complete",
+  "version": "1.0.0",
+  "data": {
+    "brand_name": "Rasa",
+    "art_direction_summary": "The hero image must land the promise in one glance: a month of meals, planned to your macros and budget, ordered with one tap. It should feel warm, calm and honest — the relief of a good meal arriving without effort — and pair the real food with the calm app moment. Never a glossy delivery ad, never a diet-scold.",
+    "hero_concepts": [
+      {
+        "id": "hero_01",
+        "title": "The 1pm confirm, from above",
+        "concept": "Top-down warm desk scene: a laptop edge, a phone showing the Rasa one-tap confirm ('Grilled chicken bowl · ₹240 · arrives ~12:35 · Confirm'), and a real chicken bowl just delivered on cream. Natural window light, saffron and green accents, tomato confirm button as the single point of colour-action.",
+        "framing": "90-degree top-down, phone and food side by side, generous cream negative space for headline overlay (left or top).",
+        "lighting": "Soft directional daylight, warm, matte.",
+        "palette": "Cream + wood, saffron/green food, tomato button only.",
+        "mood": "Relief, calm, everyday competence.",
+        "headline_safe_area": "Upper-left third kept clean for hero headline and CTA.",
+        "recommended": true
+      },
+      {
+        "id": "hero_02",
+        "title": "A calm month, laid out",
+        "concept": "The app's 30-day plan on a phone held over a cream surface scattered with a few honest real dishes (bowl, roti, dal) — visually saying 'a whole month, handled.' The plan view shows macro and price chips; the spend ledger reads under cap.",
+        "framing": "Angled in-hand or flat-lay hybrid; device screen crisp and central; food arranged loosely, not styled to perfection.",
+        "lighting": "Soft, even, warm.",
+        "palette": "Cream UI + real food colour; brand accents.",
+        "mood": "In control, unhurried.",
+        "headline_safe_area": "Right third or top band for headline."
+      },
+      {
+        "id": "hero_03",
+        "title": "The friend who cooks",
+        "concept": "A candid, warm portrait-adjacent scene: a busy professional at a home desk exhaling as they set the phone down after a single tap, the meal beside them. Emphasises the human relief, not the tech.",
+        "framing": "Medium shot, shallow depth, phone and meal in the story; person present but not model-styled.",
+        "lighting": "Golden-hour indoor daylight.",
+        "palette": "Warm, muted surroundings; food and app carry the colour.",
+        "mood": "Cared for, relieved.",
+        "headline_safe_area": "Negative space beside the subject."
+      }
+    ],
+    "usage": {
+      "landing_hero": "hero_01 recommended for the landing page — it shows the whole value (plan → macros → budget → one tap) literally and legibly.",
+      "app_store": "hero_02 for store screenshots and the plan-story.",
+      "social_ads": "hero_03 for warmth-led acquisition creative."
+    },
+    "constraints": [
+      "Every on-screen nutrition figure carries an 'est.' label; no precise or medical claims.",
+      "The confirm button is the only tomato element; never imply silent/auto ordering in the hero.",
+      "Real food, real portions, real prices; no glossy or exaggerated abundance.",
+      "Keep a clean safe area for the sentence-case headline and CTA."
+    ]
+  }
+}
