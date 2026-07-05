@@ -104,5 +104,43 @@ export function createSwiggyAdapter(tools: SwiggyTools): SourceAdapter {
         min_order_inr: c.min_order_inr ?? 0,
       }));
     },
+
+    async revalidate(restaurantId, dishId) {
+      const menu = await tools.getRestaurantMenu({
+        restaurant_id: restaurantId,
+      });
+      for (const cat of menu.categories) {
+        const item = cat.items.find((i) => i.dish_id === dishId);
+        if (item) {
+          return {
+            available: true,
+            price_inr: Math.round(item.price),
+            dish_name: item.dish_name,
+            description: item.description,
+            is_veg: item.is_veg,
+            deliverable_to_address: true, // still on this restaurant's live menu
+          };
+        }
+      }
+      return null; // restaurant closed or dish no longer on the menu
+    },
+
+    async order(request) {
+      await tools.updateFoodCart({
+        restaurant_id: request.restaurantId,
+        items: [{ dish_id: request.dishId, quantity: request.quantity }],
+      });
+      if (request.couponCode)
+        await tools.applyFoodCoupon({ code: request.couponCode });
+      const placed = await tools.placeFoodOrder({
+        address_id: request.addressId,
+        confirm_token: request.confirmToken,
+      });
+      return {
+        order_id: placed.order_id,
+        amount_inr: placed.amount_inr,
+        status: placed.status,
+      };
+    },
   };
 }

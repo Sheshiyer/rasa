@@ -34,6 +34,36 @@ export interface CouponOffer {
   min_order_inr: number;
 }
 
+/**
+ * Current LIVE state of a dish at execution time. The Executor re-validates before
+ * ordering and hands these live fields (not stale plan-time ones) to the guardrail, so
+ * a menu that changed to add an allergen, flip veg/non-veg, or stop delivering is caught.
+ */
+export interface RevalidateResult {
+  available: boolean;
+  price_inr: number;
+  dish_name?: string;
+  description?: string;
+  is_veg?: boolean;
+  deliverable_to_address?: boolean;
+}
+
+export interface OrderRequest {
+  restaurantId: string;
+  dishId: string;
+  quantity: number;
+  addressId: string;
+  couponCode?: string;
+  /** Human-in-the-loop token — orders are never placed without one. */
+  confirmToken: string;
+}
+
+export interface OrderResult {
+  order_id: string;
+  amount_inr: number;
+  status: string;
+}
+
 export interface SourceAdapter {
   /** Stable source id, e.g. "swiggy". Matches CandidateDish.source. */
   readonly source: string;
@@ -47,4 +77,11 @@ export interface SourceAdapter {
   discover(input: DiscoverInput): Promise<CandidateDish[]>;
   /** Available coupons at a restaurant (the Budget Agent picks the best applicable one). */
   fetchCoupons(restaurantId: string): Promise<CouponOffer[]>;
+  /** Live availability + price for a specific dish; null if it no longer exists. */
+  revalidate(
+    restaurantId: string,
+    dishId: string,
+  ): Promise<RevalidateResult | null>;
+  /** Build the cart, apply the coupon, and place the order. Requires a confirm token. */
+  order(request: OrderRequest): Promise<OrderResult>;
 }

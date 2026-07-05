@@ -78,3 +78,20 @@ export {
   type PlanResult,
   type PlannerDeps,
 } from "./agents/planner";
+
+// M7 — Scheduler / Executor
+export {
+  createExecutor,
+  type ExecutorDeps,
+  type Notifier,
+  type Nudge,
+  type ConfirmDecision,
+  type ExecutionStore,
+  type SlotOutcome,
+} from "./agents/scheduler/executor";
+export {
+  createScheduler,
+  type DueEntry,
+  type DueEntrySource,
+  type SchedulerExecutor,
+} from "./agents/scheduler/scheduler";
