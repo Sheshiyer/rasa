@@ -8,7 +8,10 @@ export type GuardrailDecision =
 
 export type GuardrailBlockCode =
   | "allergen"
+  | "diet"
+  | "not_deliverable"
   | "over_budget"
   | "price_spike"
   | "missing_confirm"
+  | "invalid_price"
   | "unsafe_copy";

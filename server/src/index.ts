@@ -65,3 +65,16 @@ export {
   type BudgetEnvelope,
   type CouponPlan,
 } from "./agents/budget";
+
+// M6 — Guardrail + Planner (CSP)
+export {
+  checkGuardrail,
+  checkNutritionCopy,
+  type OrderAction,
+} from "./guardrail/policy";
+export {
+  createPlanner,
+  type PlanRequest,
+  type PlanResult,
+  type PlannerDeps,
+} from "./agents/planner";
